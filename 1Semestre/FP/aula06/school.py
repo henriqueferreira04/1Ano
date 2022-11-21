@@ -14,20 +14,16 @@ def loadFile(fname, lst):
                 else:
                     student.append(n)
             student = tuple(student)
-            print(notaFinal(student))
-
-        
-
+            print(student)
             
     
 # b) Crie a função notaFinal aqui...
-def notaFinal(student):
+def notaFinal(turma):
     
-    nota1 = student[5]
-    nota2 = student[6]
-    nota3 = student[7]
-    notaFinal = (nota1 + nota2 + nota3)/3
-    return notaFinal
+
+
+    
+    
 
 
 
@@ -38,9 +34,12 @@ def notaFinal(student):
 def main():
     lst = []
     # ler os ficheiros
-    loadFile("school1.csv", lst)
-    loadFile("school2.csv", lst)
-    loadFile("school3.csv", lst)
+    class1 = loadFile("school1.csv", lst)
+    class2 = loadFile("school2.csv", lst)
+    class3 = ("school3.csv", lst)
+    notaFinal(class1)
+    notaFinal(class2)
+    notaFinal(class3)
     
     
     # ordenar a lista
