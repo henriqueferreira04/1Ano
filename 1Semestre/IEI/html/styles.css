@@ -6,9 +6,12 @@
 }
 .header{
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: block;
     background-color: #475c6c;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
     
 }
 
@@ -20,9 +23,10 @@
 
 .navigation a{
     height: 100%;
-    display: table;
+    display: block;
+    text-align: center;
     float: left;
-    padding: 0px 20px;
+    padding: 14px 16px;
 }
 
 .navigation a li{
@@ -32,6 +36,11 @@
     color: white;
     font-family: 'Bebas Neue';
     font-size: 25px;
+}
+
+.navigation a:hover {
+    background: #ddd;
+    color: #475c6c;
 }
 
 .block {
@@ -52,8 +61,10 @@
 }
 
 h2 {
+    font-family: initial;
+    color: white;
+    font-size: xx-large;
     
-    color: white
 
 }
 
@@ -68,7 +79,6 @@ table, td, th {
     border: 2px 
     solid black;
     text-align: center;
-    t
             
 }
 
