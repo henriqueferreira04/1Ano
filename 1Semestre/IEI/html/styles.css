@@ -58,6 +58,7 @@
     position: relative;
     box-sizing: border-box;
     display: block;
+    
 }
 
 h2 {
@@ -84,5 +85,6 @@ table, td, th {
 
 img {
     width: 235px;
+    
 }
 
