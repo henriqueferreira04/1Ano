@@ -16,8 +16,11 @@ with open('drawing.txt','r') as file:
         
         else:
             
-            line.split()
-            t.goto(line[0], line[1])
+            line = line.split()
+            x = float(line[0])
+            y = float(line[1])
+            t.goto(x,y)
+            
 
 
 # wait

@@ -17,20 +17,20 @@ def main():
 
     # Esta comprehension define uma lista dos nomes das pessoas em people
     names = [n for n,w,h in people]
-        # = [p[0] for p in people]  # equivalente
+
     print("Names:", names)
     
     # Usando list comprehensions, obtenha: 
     # a) Uma lista com os valores de imc de todas as pessoas.
-    imcs = ...
+    imcs = [imc(w,h) for n,w,h in people]
     print("IMCs:", imcs)
 
     # b) Uma lista dos tuplos de pessoas com altura superior a 1.7m.
-    tallpeople = ...
+    tallpeople = [n for n,w,h in people if h>1.70]
     print("Tall people:", tallpeople)    
 
     # c) Uma lista de nomes das pessoas com IMC entre 18 e 25.
-    midimc = ...
+    midimc = [n for n, w, h in people if imc(w,h)>18 and imc(w,h)<25] 
     print("Mid-IMC:", midimc)
 
 
