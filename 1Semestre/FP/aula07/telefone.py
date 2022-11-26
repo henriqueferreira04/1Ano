@@ -11,6 +11,7 @@ def filterPartName(contacts, partName):
     ...
 
 
+
 def menu():
     """Shows the menu and gets user option."""
     print()
@@ -22,6 +23,26 @@ def menu():
     print("(T)erminar")
     op = input("opção? ").upper()   # converts to uppercase...
     return op
+
+def adicionarContacto(contactos):
+    número = input('Número: ')
+    nome = input('Nome: ')
+    contactos[número] = nome
+
+
+
+def removerContacto(contactos):
+    número = input('Número a remover: ')
+    del contactos[número]
+    print('Número Removido')
+
+
+def procurarNumero(contactos):
+    numero = input('Número a encontrar: ')
+    if numero in contactos == True:
+        print(contactos[numero])
+    else:
+        print('Número não encontrado.')
 
 
 def main():
@@ -35,17 +56,27 @@ def main():
         "876111333": "Carlos Martins",
         "433162999": "Ana Bacalhau"
         }
-
+    
     op = ""
     while op != "T":
         op = menu()
         if op == "T":
-            print("Fim")
+            print(contactos)
         elif op == "L":
             print("Contactos:")
             listContacts(contactos)
+        elif op == 'A':
+            adicionarContacto(contactos)
+        elif op == 'R':
+            removerContacto(contactos)
+        elif op == 'N':
+            procurarNumero(contactos)
+
         else:
             print("Não implementado!")
+
+   
+    
     
 
 # O programa começa aqui

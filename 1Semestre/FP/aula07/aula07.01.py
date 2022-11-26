@@ -1,6 +1,6 @@
 import sys
 
-with open(sys.argv[1],'r') as file:
+with open('pg3333.txt','r') as file:
     d = {}
     
     for line in file:
@@ -17,10 +17,8 @@ with open(sys.argv[1],'r') as file:
                     d[character] = 1
                 
 
-alphabetic = d.values()
-order = alphabetic.sort()
-for order2 in order:
-    print(order2,'', d[order2])
+for i in sorted(d):
+    print(i, d[i])
     
 
 
