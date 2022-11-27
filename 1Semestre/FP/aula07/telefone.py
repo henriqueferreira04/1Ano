@@ -6,10 +6,20 @@ def listContacts(dic):
     for num in dic:
         print("{:>12s} : {}".format(num, dic[num]))
 
-def filterPartName(contacts, partName):
+def filterPartName(contactos):
     """Returns a new dict with the contacts whose names contain partName."""
-    ...
-
+    dict = {}
+    partname = input('Nome: ')
+    partname = partname.split()
+    nomes = contactos.values()
+    contador = 0
+    for nome in nomes:
+        nome = nome.split()
+        
+        if partname in nome:
+            dict[nome] = contactos.value(nome)
+    
+    print(dict)
 
 
 def menu():
@@ -39,7 +49,7 @@ def removerContacto(contactos):
 
 def procurarNumero(contactos):
     numero = input('Número a encontrar: ')
-    if numero in contactos == True:
+    if numero in contactos:
         print(contactos[numero])
     else:
         print('Número não encontrado.')
@@ -71,6 +81,8 @@ def main():
             removerContacto(contactos)
         elif op == 'N':
             procurarNumero(contactos)
+        elif op == 'P':
+            filterPartName(contactos)
 
         else:
             print("Não implementado!")
