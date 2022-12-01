@@ -8,13 +8,30 @@ COINS = [200, 100, 50, 20, 10, 5, 2, 1]
 
 def value(bag):
     """Return total amount in a bag."""
-    ...
+    keys = bag.keys()
+    value = 0
+    for key in keys:
+        for indice in range(0, len(COINS)):
+            if key == COINS[indice]:
+                value += bag[key] * key 
 
+    return value
 
 def transfer1coin(bag1, c, bag2):
     """Try to transfer one coin of value c from bag1 to bag2.
     If possible, transfer coin and return True, otherwise return False."""
-    ...
+    if bag1[c] != 0:
+        bag1[c] -= 1
+        if c in bag2:
+            bag2[c] += 1
+        else:
+            bag2[c] = 1
+
+        return True
+    else:
+        return False
+        
+
 
 
 def transfer(bag1, amount, bag2):
@@ -32,6 +49,13 @@ def strbag(bag):
     """Return a string representing the contents of a bag.""" 
     # You may want to change this to produce a more user-friendly
     # representation such as "4x200+3x50+1x5+3x1=958".
+    
+    for key in bag.keys():
+        print('{}x{}'.format(bag[key], key), end = '+')
+
+     
+    print(value)
+    print(bag.keys())
     return str(bag)
     ...
 

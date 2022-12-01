@@ -30,24 +30,47 @@ def loadStockFile(filename):
             tup = (name, date, float(parts[OPEN]), float(parts[MAX]),
                 float(parts[MIN]), float(parts[CLOSE]), int(parts[VOLUME]))
             lst.append(tup)
+            
     return lst
 
 def totalVolume(lst):
     totVol = {}
     # Complete ...
+    for linha in lst:
+        
+        if linha[0] in totVol:
+            totVol[linha[0]] += linha[6]
+        else:
+            totVol[linha[0]] = linha[6]
+
 
     return totVol
 
 def maxValorization(lst):
     vMax = {}
     # Complete ...
+    for linha in lst:
+        valorizacao = (linha[5] / linha[2]) 
+        if linha[1] in vMax:
+            
+            valor = vMax[linha[1]][1]
+            print(valor)
+            if valorizacao > valor:
+                vMax[linha[1]] = (linha[0],valorizacao)
+
+        else:
+            vMax[linha[1]] = (linha[0], valorizacao)
+
 
     return vMax
 
 def stocksByDateByName(lst):
     dic = {}
     # Complete ...
+    for linha in lst:
+            dic[linha[1],linha[0]] = linha
 
+   
     return dic
 
 def portfolioValue(stocks, portfolio, date):
