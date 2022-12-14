@@ -51,10 +51,14 @@ def strbag(bag):
     # representation such as "4x200+3x50+1x5+3x1=958".
     
     for key in bag.keys():
-        print('{}x{}'.format(bag[key], key), end = '+')
+        
+        if key == 200:
+            print('{}x{} = {}'.format(bag[key], key, value(bag)))
+        else:
+            print('{}x{}'.format(bag[key], key), end = '+')
 
      
-    print(value)
+    
     print(bag.keys())
     return str(bag)
     ...

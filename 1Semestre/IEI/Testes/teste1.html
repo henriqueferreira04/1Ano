@@ -1,0 +1,55 @@
+<html lang="pt"> <head>
+<meta charset="UTF-8">
+ <script>
+    var s = "3"; 
+    var x;
+    x = 5; 
+    document.write(x+2+'<br />');
+    document.write(s+4+'<br />');
+    document.write(Number(s)+4+'<br />');
+
+    if (x == s) alert("Iguais");
+    else alert("Diferentes");
+
+    s = Number(s)
+
+    for(var i=0;i<16;i++){
+        document.write(i - 2); 
+        document.write("<br />");
+    } 
+    document.write("Batman");
+
+
+    function sum(x,s){
+        return x + s;
+    }
+    function sub(x,s){
+        return x - s;
+    }
+    function mult(x,s){
+        return x * s;
+    }
+    function div(x,s){
+        return x / s;
+    }
+    document.write('<br />', sum(x,s), '<br />', sub(x,s), '<br />', mult(x,s), '<br />', div(x,s));
+    
+    var a ="abc"; 
+    switch(a) {
+        case "abc": alert("string abc"); break; 
+        case 3: alert("inteiro 3"); break; 
+        default: alert("outro");
+    }
+    var n = 0;
+    while (a == 'abc'){
+        document.write('<br />Suwi')
+        n += 1;
+        if (n == 7) {
+            break
+        }
+    }
+</script> 
+
+</head>
+<body> 
+</body> </html>
