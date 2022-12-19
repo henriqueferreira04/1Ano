@@ -2,7 +2,12 @@
 # Calcula o factorial de n, baseado na recorrencia n! = n*(n-1)!.
 # Mas não termina!  Detete a causa e corrija o erro.
 def fact(n):
-    return n*fact(n-1)
+    fatorial = 1
+    if n != 0 and n!= 1:
+        factorial = n * (n-1)
+        fatorial = factorial * fact(n-2)
+
+    return fatorial
 
 
 # Calcula o maximo divisor comum entre a e b.

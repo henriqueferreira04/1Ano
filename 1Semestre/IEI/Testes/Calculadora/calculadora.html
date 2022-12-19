@@ -2,9 +2,20 @@
     <meta charset="UTF-8">
     <title>Exemplo 1</title> </head>
     <body>
-    <input id="op1" value="2"> <span>+</span>
-    <input id="op2" value="3"> <span>=</span>
-    <input id="res" value="op1 + op2">
+    <input id="op1" value="4">
+    <span id="op-view">+</span>
+    <input id="op2" value="5"> 
+    <span>=</span>
+    <input id="res" value="">
     <script src="dom.js"></script>
         <!-- processamento do resultado da adição -->
+    <select id="operation" onchange="operation()">
+        <option value="+"> Addition</option>
+        <option value="-"> Subtraction</option>
+        <option value="÷"> Division</option>
+        <option value="x"> Multiplication</option>
+    </select>
+
+    
+    <button id="btn" onclick="calculate()" onmouseover="move()">Calculate</button>
     </body> </html>

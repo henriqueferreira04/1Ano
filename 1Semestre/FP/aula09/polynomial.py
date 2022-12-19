@@ -1,10 +1,10 @@
 # COMPLETE a função abaixo.
 # Veja os exemplos de utilização e resultados esperados.
-
+import math
 # polynomial2(a,b,c) deve devolver uma função f tal que
 # f(x) seja o polinómio de segundo grau ax²+bx+c.
 def polynomial2(a, b, c):
-    ...
+    p = lambda p(x):(a* x**2)
 
 
 # DESAFIO EXTRA:

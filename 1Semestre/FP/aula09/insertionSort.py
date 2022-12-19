@@ -33,7 +33,7 @@ def main():
 
     # sort by length (requires key= argument):
     lst = lst0.copy()
-    insertionSort(lst, key=len)
+    insertionSort(lst, key=len(lst[0]))
     print("lst2", lst)
     assert lst == sorted(lst0, key=len)
 

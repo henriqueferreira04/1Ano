@@ -6,7 +6,7 @@ def genWords3(symbols):
 
 # Generates all length-n words with symbols taken from the given alphabet.
 def genWords(symbols, n):
-    ...
+    
 
 
 def main():
