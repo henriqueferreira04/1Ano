@@ -4,8 +4,23 @@ def genWords3(symbols):
     return [ x+y+z for x in symbols for y in symbols for z in symbols ]
 
 
+from traced import traced
 # Generates all length-n words with symbols taken from the given alphabet.
+@traced
 def genWords(symbols, n):
+    if n == 1:
+        return symbols
+    else:
+        words = []
+        
+        sbwords = genWords(symbols, n-1)
+        
+
+        for symbol in symbols:
+            for word in sbwords:
+                words.append(word + symbol)
+        return words
+    
     
 
 

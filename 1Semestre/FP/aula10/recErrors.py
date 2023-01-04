@@ -1,21 +1,27 @@
 
 # Calcula o factorial de n, baseado na recorrencia n! = n*(n-1)!.
 # Mas não termina!  Detete a causa e corrija o erro.
-def fact(n):
-    fatorial = 1
-    if n != 0 and n!= 1:
-        factorial = n * (n-1)
-        fatorial = factorial * fact(n-2)
+from traced import traced 
 
-    return fatorial
+
+def fact(n):
+    if n > 0:
+        res = n*fact(n-1)
+    else:
+        res = 1
+
+    return res
 
 
 # Calcula o maximo divisor comum entre a e b.
 # Baseia-se no algoritmo de Euclides.
 # Mas não termina!  Detete a causa e corrija o erro.
+
 def gcd(a, b):
     if b == 0:
         return a
+    if b > a%b:
+        return gcd(b, a%b)
     return gcd(a%b, b)
 
 
