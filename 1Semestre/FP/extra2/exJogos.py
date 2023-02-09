@@ -1,103 +1,105 @@
-def readfile(fname):
-    jornadas = {}
-    with open(fname, 'r') as file:
+def readfile(filename):
+    with open(filename, 'r') as file:
+        dictjornada = {}
         for line in file:
             line = line.strip().split(',')
-            jor, casa, fora = int(line[0]), line[1], line[2]
-           
-            if jor not in jornadas:
-                jornadas[jor] = [(casa, fora)]
-            
+            if line[0] not in dictjornada:
+                dictjornada[line[0]] = [(line[1], line[2])]
             else:
-                jornadas[jor].append((casa, fora))
-
-        return jornadas
+                dictjornada[line[0]].append((line[1], line[2]))
+        
+    return dictjornada
 
 
 def interface(jornadas):
-    while True:
-        jornada = int(input('Jornada? '))
-        if jornada in jornadas:
-            break
-        else:
-            print('Jornada inválida!')
-
-    jogosJornada = jornadas[jornada]
     count = 1
-    for jogo in jogosJornada:
+    lstaposta = []
+    while True:
+        jornada = input('Jornada? ')
+        if jornada not in jornadas:
+            print('Jornada Inválida!')
+        else:
+            break
+
+    jogos = jornadas[jornada]
+
+    for jogo in jogos:
         while True:
             aposta = input('{} {} vs {}: '.format(count, jogo[0], jogo[1])).upper()
-            if aposta == '1' or aposta == '2' or aposta.upper() == 'X':
+       
+            if aposta == '1' or aposta == '2' or aposta == 'X':
                 break
+                
             else:
-                print('Aposta inválida!')
+                print('Aposta Inválida!')
                 
-        if count == 1:
-            with open('jornada{}.csv'.format(jornada), 'w') as file:
-                file.write('{}, {}\n'.format(count, aposta))
-        else:
-            with open('jornada{}.csv'.format(jornada), 'a') as file:
-                file.write('{}, {}\n'.format(count, aposta))
+        lstaposta.append((count, aposta))
         count += 1
-
-    return 'jornada{}.csv'.format(jornada), jornada
+    
+    with open('jornadas{}.csv'.format(jornada), 'w') as file:
+        for line in lstaposta:
+            file.write('{} \n'.format(line))
+    
+    return jornada, lstaposta
+    
     
 
-def resultados(newfile, jornadas):
-    print('Jornada {}'.format(newfile[1]))
-    jornada = jornadas[newfile[1]]
-    jogos = 9 * (newfile[1] - 1)
-    
-    with open(newfile[0], 'r') as file:
-        with open('Jogos.csv', 'r') as file2:
-            for line1, line2 in zip(file, file2):
-                line1 = line1.strip().split(',')
-                line2 = line2.strip().split(',')
+
+
+def resultados(filename, jornada, aposta):
+    with open(filename, 'r') as file:
+        count = 0
+        certos = 0
+        jornadaescolhida = 1
+        for line in file:
+            line = line.strip().split(',')
+            count += 1
+            if count == 10:
+                count = 0
+                jornadaescolhida += 1
+
+            if jornadaescolhida == int(jornada):
+                casa = int(line[3])
+                fora = int(line[4])
                 
-                while jogos > 1:
-                    file2.readline()
-                    jogos -= 1
-
-                casa, fora = line2[1], line2[2]
-                vcasa, vfora = line2[3], line2[4]
-                print(casa, fora)
-                print(jornada)
-                if (casa, fora) in jornada:
+                if casa > fora:
+                    resultado = '1'
                     
-                    if vcasa > vfora:
-                        resultado = 1
-                    elif vcasa < vfora:
-                        resultado = 2
-                    elif vcasa == vfora:
-                        resultado = 'X'
-                            
-                    if resultado == line1[1]:
-                                
-                        aposta = '(CERTO)'
-
-                    if resultado != line1[1]:
-                        print(line1[1], resultado)
-                                
-                        aposta = '(ERRADO)'
-                            
-                    print('{} {} {}-{} {} : {} {}'.format(line1[0], casa, line2[3], line2[4], fora, line1[1], aposta))
-                        
-           
-                        
-            
+                elif casa < fora:
+                    resultado = '2'
+                else:
+                     resultado = 'X'
                 
+                if resultado == aposta[count-1][1]:
+                    ganhos = 'CERTO'
+                    certos += 1
+                else:
+                    ganhos = 'ERRADO'
+            
+                if count == 1:
+                    print('\nJornada', jornada,'\n')
+                print('{} {:>15s} {:4d}-{:<4d} {:<15s} : {} ({:<5s})'.format(count, line[1], casa, fora, line[2], aposta[count-1][1], ganhos))
+
+    if certos == 9:
+        print('Tem 9 certas. Parabéns ganhou o 1º prémio .')
+    elif certos == 8:
+        print('Tem 8 certas. Parabéns ganhou o 2º prémio.')
+    elif certos == 7:
+        print('Tem 7 certas. Parabéns ganhou o 3º prémio:')
+    else:
+        print('\nTem {} certas. Não ganhou prémio.'.format(certos))
+
+              
 
 
-    
 
 
 
-        
 
 def main():
-    jornadas = readfile("Jornadas.csv")
-    newfile = interface(jornadas)
-    resultados(newfile, jornadas)
+    jornadas = readfile('jornadas.csv')
+    jornada, aposta = interface(jornadas)
+    resultados('Jogos.csv', jornada, aposta)
 
 
 
