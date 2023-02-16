@@ -10,6 +10,5 @@ public class KmToMiles {
 		miles = km / 1.609;
 		System.out.println("A distância em milhas é " + miles);
 		sc.close();
-
 	}
 }
