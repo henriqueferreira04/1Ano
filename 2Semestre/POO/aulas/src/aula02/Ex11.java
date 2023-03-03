@@ -7,5 +7,6 @@ public class Ex11 {
         boolean validacao = input.ValidNumber();
         System.out.print(validacao);
 
+    
     }
 }
