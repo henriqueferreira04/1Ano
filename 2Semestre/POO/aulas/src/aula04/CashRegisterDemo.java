@@ -1,6 +1,6 @@
 package aula04;
 
-import java.util.ArrayList;
+
 
 class Product {
     
@@ -37,21 +37,24 @@ class CashRegister {
     // TODO: completar implementação da classe
 
     
-    ArrayList<Product> lista = new ArrayList<Product>();
-    double totalprice = 0;
     
+    double totalprice = 0;
+    Product[] produtos = new Product[5];
+    
+    int i = 0;
     public void addProduct(Product produto) {
         
-        lista.add(produto);
+        produtos[i] = produto;
+        i++;
     }
 
     public String toString() {
 
         System.out.printf("%-12s %7s %10s %8s\n", "Product", "Price", "Quantity", "Total");
 
-        for (Product produto: lista) {
-            System.out.printf("%-12s %7.2f %10d %8.2f\n", produto.getName(), produto.getPrice(), produto.getQuantity(), produto.getTotalValue());
-            totalprice += produto.getTotalValue(); 
+        for (int i = 0; i < produtos.length; i++) {
+            System.out.printf("%-12s %7.2f %10d %8.2f\n", produtos[i].getName(), produtos[i].getPrice(), produtos[i].getQuantity(), produtos[i].getTotalValue());
+            totalprice += produtos[i].getTotalValue(); 
         }
 
         return "\nTotal price: "+ totalprice;
