@@ -26,7 +26,7 @@ public class Ex01 {
 
                 dates[i] = new DateYMD(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
 
-                if (dates[i].validMonth(dates[i].month) == false || dates[i].valid(dates[i].day, dates[i].month, dates[i].year) == false) {
+                if (dates[i].validMonth(dates[i].month) == false || dates[i].valid() == false) {
                     System.out.print("Invalid date!\n");
                 }
 
@@ -141,8 +141,8 @@ class DateYMD {
         
     }
 
-    public boolean valid(int day, int month, int year) {
-        if(day > 0 && day <= monthDays(month, year) && validMonth(month)) {
+    public boolean valid() {
+        if(day > 0 && day <= monthDays(month, year) && validMonth(month) && year > 0) {
             return true;
         }else {
             return false;

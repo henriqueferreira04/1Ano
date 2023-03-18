@@ -1,0 +1,126 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 656 512 840 528)
+	(text "INPUT" (rect 141 0 194 18)(font "Arial" (font_size 6)))
+	(text "SW[7..0]" (rect 5 0 93 22)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 185 25)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 544 528 656 560))
+)
+(pin
+	(input)
+	(rect 672 552 864 568)
+	(text "INPUT" (rect 149 0 202 18)(font "Arial" (font_size 6)))
+	(text "SW[15..8]" (rect 5 0 102 25)(font "Intel Clear" ))
+	(pt 192 8)
+	(drawing
+		(line (pt 108 12)(pt 133 12))
+		(line (pt 108 4)(pt 133 4))
+		(line (pt 137 8)(pt 192 8))
+		(line (pt 108 12)(pt 108 4))
+		(line (pt 133 4)(pt 137 8))
+		(line (pt 133 12)(pt 137 8))
+	)
+	(text "VCC" (rect 152 7 193 25)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 568 568 680 600))
+)
+(pin
+	(output)
+	(rect 1296 512 1479 528)
+	(text "OUTPUT" (rect 1 0 75 18)(font "Arial" (font_size 6)))
+	(text "LEDG[0]" (rect 90 0 177 22)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1479 528 1575 560))
+)
+(symbol
+	(rect 1016 488 1192 568)
+	(text "EqCmp8" (rect 5 0 94 22)(font "Arial" ))
+	(text "inst" (rect 8 64 42 86)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "input0[7..0]" (rect 0 0 109 22)(font "Arial" ))
+		(text "input0[7..0]" (rect 21 27 130 49)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "input1[7..0]" (rect 0 0 109 22)(font "Arial" ))
+		(text "input1[7..0]" (rect 21 43 130 65)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "cmpOut" (rect 0 0 79 22)(font "Arial" ))
+		(text "cmpOut" (rect 89 27 168 49)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 64))
+	)
+)
+(connector
+	(pt 864 560)
+	(pt 968 560)
+	(bus)
+)
+(connector
+	(pt 968 560)
+	(pt 968 536)
+	(bus)
+)
+(connector
+	(pt 968 536)
+	(pt 1016 536)
+	(bus)
+)
+(connector
+	(pt 840 520)
+	(pt 1016 520)
+	(bus)
+)
+(connector
+	(pt 1192 520)
+	(pt 1296 520)
+)
