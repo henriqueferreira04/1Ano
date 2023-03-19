@@ -1,0 +1,168 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 544 312 728 328)
+	(text "INPUT" (rect 141 0 194 18)(font "Arial" (font_size 6)))
+	(text "SW[3..0]" (rect 5 0 92 22)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 185 25)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 432 328 544 360))
+)
+(pin
+	(input)
+	(rect 600 344 776 360)
+	(text "INPUT" (rect 133 0 186 18)(font "Arial" (font_size 6)))
+	(text "KEY[0]" (rect 5 0 75 22)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 177 25)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 496 360 600 392))
+)
+(pin
+	(output)
+	(rect 1056 312 1257 328)
+	(text "OUTPUT" (rect 1 0 75 18)(font "Arial" (font_size 6)))
+	(text "HEX0[6..0]" (rect 90 0 195 25)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1257 328 1361 360))
+)
+(pin
+	(output)
+	(rect 1080 384 1286 400)
+	(text "OUTPUT" (rect 1 0 75 18)(font "Arial" (font_size 6)))
+	(text "LEDR[6..0]" (rect 90 0 200 22)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1286 400 1390 432))
+)
+(symbol
+	(rect 800 280 1008 360)
+	(text "Bin7SegDecoder" (rect 5 0 178 22)(font "Arial" ))
+	(text "inst" (rect 8 64 42 86)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "binInput[3..0]" (rect 0 0 128 22)(font "Arial" ))
+		(text "binInput[3..0]" (rect 21 27 149 49)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "enable" (rect 0 0 67 22)(font "Arial" ))
+		(text "enable" (rect 21 43 88 65)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "decOut_n[6..0]" (rect 0 0 147 22)(font "Arial" ))
+		(text "decOut_n[6..0]" (rect 63 27 210 49)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 64))
+	)
+)
+(connector
+	(pt 1080 392)
+	(pt 1032 392)
+	(bus)
+)
+(connector
+	(pt 1032 392)
+	(pt 1032 320)
+	(bus)
+)
+(connector
+	(pt 1056 320)
+	(pt 1032 320)
+	(bus)
+)
+(connector
+	(pt 1032 320)
+	(pt 1016 320)
+	(bus)
+)
+(connector
+	(pt 728 320)
+	(pt 800 320)
+	(bus)
+)
+(connector
+	(pt 800 320)
+	(pt 800 312)
+	(bus)
+)
+(connector
+	(pt 1008 312)
+	(pt 1016 312)
+	(bus)
+)
+(connector
+	(pt 1016 312)
+	(pt 1016 320)
+	(bus)
+)
+(connector
+	(pt 776 352)
+	(pt 800 352)
+)
+(connector
+	(pt 800 328)
+	(pt 800 352)
+)
+(junction (pt 1032 320))

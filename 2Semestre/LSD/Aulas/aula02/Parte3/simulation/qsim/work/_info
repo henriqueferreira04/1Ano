@@ -1,0 +1,266 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d//mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula02/Parte3/simulation/qsim
+T_opt
+!s110 1679244196
+VB:<FCm`Hn1BfYZQnQ7W0I2
+04 26 19 work bin7segdecoder_vhd_vec_tst bin7segdecoder_arch 1
+=1-001c42fa1816-64173ba3-250-5fc
+Z2 !s124 OEM10U3 
+Z3 o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+Z6 !s110 1679246009
+Vzk@CNWG`ZgWfQ8=Yk>2Rg1
+04 23 16 work displaydemo_vhd_vec_tst displaydemo_arch 1
+=1-001c42fa1816-641742b9-1b8-1e44
+R2
+R3
+R4
+n@_opt1
+R5
+Ebin7segdecoder
+Z7 w1679244192
+Z8 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z9 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z10 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z13 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+!i122 0
+R1
+Z14 8DisplayDemo.vho
+Z15 FDisplayDemo.vho
+l0
+Z16 L78 1
+VTbWdhnLlY;8h6_^ak_Kf`3
+!s100 DmSf9DKe7<P8JbDP48W=F0
+Z17 OL;C;2021.2;73
+32
+Z18 !s110 1679244195
+!i10b 1
+Z19 !s108 1679244194.000000
+Z20 !s90 -work|work|DisplayDemo.vho|
+Z21 !s107 DisplayDemo.vho|
+!i113 0
+Z22 o-work work
+Z23 tExplicit 1 CvgOpt 0
+Astructure
+R8
+R9
+R10
+R11
+R12
+R13
+DEx4 work 14 bin7segdecoder 0 22 TbWdhnLlY;8h6_^ak_Kf`3
+!i122 0
+l137
+L99 313
+Vde7GO>=_`e6:R`mc`eJ`b3
+!s100 3i;HgK6@6eoIHZez3hJ:K3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ebin7segdecoder_vhd_vec_tst
+Z24 w1679244191
+R11
+R12
+!i122 1
+R1
+Z25 8Waveform.vwf.vht
+Z26 FWaveform.vwf.vht
+l0
+Z27 L32 1
+VYnO=bg4I=Ca]7ZE>RVH101
+!s100 h5i36]W^]AdJojgWeM8O@3
+R17
+32
+R18
+!i10b 1
+Z28 !s108 1679244195.000000
+Z29 !s90 -work|work|Waveform.vwf.vht|
+Z30 !s107 Waveform.vwf.vht|
+!i113 0
+R22
+R23
+Abin7segdecoder_arch
+R11
+R12
+DEx4 work 26 bin7segdecoder_vhd_vec_tst 0 22 YnO=bg4I=Ca]7ZE>RVH101
+!i122 1
+l45
+L34 135
+Vli1FhL]7HdRbY5GFi;:V61
+!s100 D5zKX8PP=@@WPZki:_^Ak3
+R17
+32
+R18
+!i10b 1
+R28
+R29
+R30
+!i113 0
+R22
+R23
+Edisplaydemo
+Z31 w1679246006
+R8
+R9
+R10
+R11
+R12
+R13
+!i122 12
+Z32 d//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula02/Parte3/simulation/qsim
+R14
+R15
+l0
+R16
+V7HU>mGz2lPV8>gR:^Qg8d2
+!s100 dTCFC`Cd]2=903i_fHJie3
+R17
+32
+Z33 !s110 1679246008
+!i10b 1
+Z34 !s108 1679246008.000000
+R20
+R21
+!i113 0
+R22
+R23
+Astructure
+R8
+R9
+R10
+R11
+R12
+R13
+DEx4 work 11 displaydemo 0 22 7HU>mGz2lPV8>gR:^Qg8d2
+!i122 12
+l186
+L109 1010
+VQj7HEGZfKE>eOcgcPA=F?1
+!s100 2Bz^oF0TP5SzMP]8eG7S23
+R17
+32
+R33
+!i10b 1
+R34
+R20
+R21
+!i113 0
+R22
+R23
+Edisplaydemo_vhd_vec_tst
+Z35 w1679246005
+R11
+R12
+!i122 13
+R32
+Z36 8Waveform3.vwf.vht
+Z37 FWaveform3.vwf.vht
+l0
+R27
+V6zQ[U8K]CJTQ7A1NAd1DU0
+!s100 hLWaMhb;V=6<cnK2M`j>c0
+R17
+32
+R6
+!i10b 1
+R34
+Z38 !s90 -work|work|Waveform3.vwf.vht|
+Z39 !s107 Waveform3.vwf.vht|
+!i113 0
+R22
+R23
+Adisplaydemo_arch
+R11
+R12
+DEx4 work 23 displaydemo_vhd_vec_tst 0 22 6zQ[U8K]CJTQ7A1NAd1DU0
+!i122 13
+l49
+L34 200
+V`X;Z6A;GTAMKUC8`6H[LD0
+!s100 Ji4z7FHzI5>zh_[_Tem]D3
+R17
+32
+R6
+!i10b 1
+R34
+R38
+R39
+!i113 0
+R22
+R23
+Ehard_block
+R31
+R8
+R9
+R10
+R11
+R12
+R13
+!i122 12
+R32
+R14
+R15
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R17
+32
+R33
+!i10b 1
+R34
+R20
+R21
+!i113 0
+R22
+R23
+Astructure
+R8
+R9
+R10
+R11
+R12
+R13
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 12
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R17
+32
+R33
+!i10b 1
+R34
+R20
+R21
+!i113 0
+R22
+R23
