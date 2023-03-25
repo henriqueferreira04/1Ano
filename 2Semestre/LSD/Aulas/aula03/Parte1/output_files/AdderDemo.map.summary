@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Tue Mar 21 08:57:33 2023
+Analysis & Synthesis Status : Successful - Thu Mar 23 14:03:22 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : AdderDemo
-Top-level Entity Name : Adder4
+Top-level Entity Name : AdderDemo
 Family : Cyclone IV E
 Total logic elements : 5
     Total combinational functions : 5

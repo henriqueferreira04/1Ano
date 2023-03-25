@@ -1,5 +1,5 @@
 Flow report for AdderDemo
-Tue Mar 21 09:01:13 2023
+Thu Mar 23 14:03:59 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 21 09:01:13 2023          ;
+; Flow Status                        ; Successful - Thu Mar 23 14:03:59 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; AdderDemo                                      ;
-; Top-level Entity Name              ; Adder4                                         ;
+; Top-level Entity Name              ; AdderDemo                                      ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Device                             ; EP4CE115F29C7                                  ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 5                                              ;
-;     Total combinational functions  ; 5                                              ;
-;     Dedicated logic registers      ; 0                                              ;
+; Total logic elements               ; 5 / 114,480 ( < 1 % )                          ;
+;     Total combinational functions  ; 5 / 114,480 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                            ;
 ; Total registers                    ; 0                                              ;
-; Total pins                         ; 14                                             ;
+; Total pins                         ; 14 / 529 ( 3 % )                               ;
 ; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 0                                              ;
-; Embedded Multiplier 9-bit elements ; 0                                              ;
-; Total PLLs                         ; 0                                              ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                          ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                  ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/21/2023 08:57:14 ;
+; Start date & time ; 03/23/2023 14:03:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AdderDemo           ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 121382770710.167938903401004           ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 121382770710.167958018307852           ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -88,11 +88,10 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Adder4      ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Adder4      ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Adder4      ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; Adder4                                 ; AdderDemo     ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -101,15 +100,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 13285 MB            ; 00:00:41                           ;
+; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 13285 MB            ; 00:00:42                           ;
+; Fitter               ; 00:00:19     ; 1.0                     ; 14199 MB            ; 00:00:23                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 13428 MB            ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 13294 MB            ; 00:00:03                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 13087 MB            ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 13087 MB            ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 13087 MB            ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 13087 MB            ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 13087 MB            ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 13087 MB            ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 13087 MB            ; 00:00:01                           ;
-; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:48                           ;
+; Total                ; 00:00:51     ; --                      ; --                  ; 00:01:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,12 +115,9 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; HENRIQUEMANE875  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
@@ -133,13 +126,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off AdderDemo -c AdderDemo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Waveform4.vwf --testbench_file=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/Waveform4.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/ AdderDemo -c AdderDemo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Waveform5.vwf --testbench_file=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/Waveform5.vwf.vht
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/FullAdder.vhd.vwf --testbench_file=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/FullAdder.vhd.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/ AdderDemo -c AdderDemo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/FullAdder.vhd.vwf --testbench_file=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/FullAdder.vhd.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/ AdderDemo -c AdderDemo
+quartus_fit --read_settings_files=off --write_settings_files=off AdderDemo -c AdderDemo
+quartus_asm --read_settings_files=off --write_settings_files=off AdderDemo -c AdderDemo
+quartus_sta AdderDemo -c AdderDemo
+quartus_eda --read_settings_files=off --write_settings_files=off AdderDemo -c AdderDemo
 
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AdderDemo
-Tue Mar 21 08:57:33 2023
+Thu Mar 23 14:03:22 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -14,9 +14,9 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "FullAdder:bit2"
- 10. Port Connectivity Checks: "FullAdder:bit1"
- 11. Port Connectivity Checks: "FullAdder:bit0"
+  9. Port Connectivity Checks: "AddSub4:inst|Adder4:Adder|FullAdder:bit2"
+ 10. Port Connectivity Checks: "AddSub4:inst|Adder4:Adder|FullAdder:bit1"
+ 11. Port Connectivity Checks: "AddSub4:inst|Adder4:Adder|FullAdder:bit0"
  12. Post-Synthesis Netlist Statistics for Top Partition
  13. Elapsed Time Per Partition
  14. Analysis & Synthesis Messages
@@ -46,10 +46,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 21 08:57:33 2023          ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 23 14:03:22 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; AdderDemo                                      ;
-; Top-level Entity Name              ; Adder4                                         ;
+; Top-level Entity Name              ; AdderDemo                                      ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Total logic elements               ; 5                                              ;
 ;     Total combinational functions  ; 5                                              ;
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; Adder4             ; AdderDemo          ;
+; Top-level entity name                                            ; AdderDemo          ; AdderDemo          ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -165,59 +165,63 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; FullAdder.vhd                    ; yes             ; User VHDL File  ; //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/FullAdder.vhd ;         ;
-; Adder4.vhd                       ; yes             ; User VHDL File  ; //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Adder4.vhd    ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
+; FullAdder.vhd                    ; yes             ; User VHDL File                     ; //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/FullAdder.vhd ;         ;
+; Adder4.vhd                       ; yes             ; User VHDL File                     ; //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Adder4.vhd    ;         ;
+; AdderDemo.bdf                    ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/AdderDemo.bdf ;         ;
+; AddSub4.vhd                      ; yes             ; User VHDL File                     ; //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/AddSub4.vhd   ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 5         ;
-;                                             ;           ;
-; Total combinational functions               ; 5         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 5         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 5         ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-;     -- Dedicated logic registers            ; 0         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 14        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; cin~input ;
-; Maximum fan-out                             ; 5         ;
-; Total fan-out                               ; 34        ;
-; Average fan-out                             ; 1.03      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 5            ;
+;                                             ;              ;
+; Total combinational functions               ; 5            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 1            ;
+;     -- <=2 input functions                  ; 4            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 5            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 14           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; SW[13]~input ;
+; Maximum fan-out                             ; 2            ;
+; Total fan-out                               ; 30           ;
+; Average fan-out                             ; 0.91         ;
++---------------------------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+-------------+--------------+
-; |Adder4                    ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Adder4                ; Adder4      ; work         ;
-;    |FullAdder:bit0|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Adder4|FullAdder:bit0 ; FullAdder   ; work         ;
-;    |FullAdder:bit1|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Adder4|FullAdder:bit1 ; FullAdder   ; work         ;
-;    |FullAdder:bit2|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Adder4|FullAdder:bit2 ; FullAdder   ; work         ;
-;    |FullAdder:bit3|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Adder4|FullAdder:bit3 ; FullAdder   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-------------+--------------+
+; |AdderDemo                 ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |AdderDemo                                          ; AdderDemo   ; work         ;
+;    |AddSub4:inst|          ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|AddSub4:inst                             ; AddSub4     ; work         ;
+;       |Adder4:Adder|       ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|AddSub4:inst|Adder4:Adder                ; Adder4      ; work         ;
+;          |FullAdder:bit0|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|AddSub4:inst|Adder4:Adder|FullAdder:bit0 ; FullAdder   ; work         ;
+;          |FullAdder:bit1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|AddSub4:inst|Adder4:Adder|FullAdder:bit1 ; FullAdder   ; work         ;
+;          |FullAdder:bit2|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|AddSub4:inst|Adder4:Adder|FullAdder:bit2 ; FullAdder   ; work         ;
+;          |FullAdder:bit3|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|AddSub4:inst|Adder4:Adder|FullAdder:bit3 ; FullAdder   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -237,7 +241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FullAdder:bit2"                                                                     ;
+; Port Connectivity Checks: "AddSub4:inst|Adder4:Adder|FullAdder:bit2"                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -246,7 +250,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FullAdder:bit1"                                                                     ;
+; Port Connectivity Checks: "AddSub4:inst|Adder4:Adder|FullAdder:bit1"                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -255,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FullAdder:bit0"                                                                     ;
+; Port Connectivity Checks: "AddSub4:inst|Adder4:Adder|FullAdder:bit0"                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -271,7 +275,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 14                          ;
 ; cycloneiii_lcell_comb ; 5                           ;
 ;     normal            ; 5                           ;
-;         3 data inputs ; 5                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
 ; Average LUT depth     ; 1.00                        ;
@@ -293,7 +298,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Tue Mar 21 08:57:13 2023
+    Info: Processing started: Thu Mar 23 14:03:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AdderDemo -c AdderDemo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -306,11 +311,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file adder4.
 Info (12021): Found 1 design units, including 1 entities, in source file adderdemo.bdf
     Info (12023): Found entity 1: AdderDemo
 Info (12021): Found 2 design units, including 1 entities, in source file addsub4.vhd
-    Info (12022): Found design unit 1: AddSub4-Structural File: //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/AddSub4.vhd Line: 12
+    Info (12022): Found design unit 1: AddSub4-Structural File: //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/AddSub4.vhd Line: 11
     Info (12023): Found entity 1: AddSub4 File: //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/AddSub4.vhd Line: 4
-Info (12127): Elaborating entity "Adder4" for the top level hierarchy
+Info (12127): Elaborating entity "AdderDemo" for the top level hierarchy
+Info (12128): Elaborating entity "AddSub4" for hierarchy "AddSub4:inst"
+Info (12129): Elaborating entity "Adder4" using architecture "A:structural" for hierarchy "AddSub4:inst|Adder4:Adder" File: //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/AddSub4.vhd Line: 25
 Warning (10036): Verilog HDL or VHDL warning at Adder4.vhd(12): object "carryOut" assigned a value but never read File: //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Adder4.vhd Line: 12
-Info (12129): Elaborating entity "FullAdder" using architecture "A:behavioral" for hierarchy "FullAdder:bit0" File: //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Adder4.vhd Line: 15
+Info (12129): Elaborating entity "FullAdder" using architecture "A:behavioral" for hierarchy "AddSub4:inst|Adder4:Adder|FullAdder:bit0" File: //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Adder4.vhd Line: 15
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -320,7 +327,7 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 13285 megabytes
-    Info: Processing ended: Tue Mar 21 08:57:33 2023
+    Info: Processing ended: Thu Mar 23 14:03:22 2023
     Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:42
 

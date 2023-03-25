@@ -3,7 +3,7 @@ package aula06;
 public class Conjunto {
     int index = 0; 
     static int proxIndex = 1;
-    int[] numeros = new int[20];
+    int[] numeros = new int[40];
 
     public Conjunto() {
         

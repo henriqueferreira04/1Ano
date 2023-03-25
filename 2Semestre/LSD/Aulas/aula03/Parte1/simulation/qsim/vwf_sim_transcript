@@ -7,7 +7,7 @@ Note: if both Questa Intel FPGA Edition and ModelSim executables are available, 
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source="//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/FullAdder.vhd.vwf" --testbench_file="//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/FullAdder.vhd.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source="//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Waveform5.vwf" --testbench_file="//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/Waveform5.vwf.vht"
 
 TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function free
 
@@ -28,8 +28,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Mar 21 09:01:10 2023
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/FullAdder.vhd.vwf --testbench_file=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/FullAdder.vhd.vwf.vht
+    Info: Processing started: Thu Mar 23 13:57:33 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AdderDemo -c AdderDemo --vector_source=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Waveform5.vwf --testbench_file=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/Waveform5.vwf.vht
 Info (119006): Selected device EP4CE115F29C7 for design "AdderDemo"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -58,15 +58,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Mar 21 09:01:12 2023
+    Info: Processing started: Thu Mar 23 13:57:35 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/ AdderDemo -c AdderDemo
 Info (119006): Selected device EP4CE115F29C7 for design "AdderDemo"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file AdderDemo.vho in folder "//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 13087 megabytes
-    Info: Processing ended: Tue Mar 21 09:01:13 2023
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Mar 23 13:57:37 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -95,7 +95,7 @@ Reading pref.tcl
 
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
 
-# Start time: 09:01:14 on Mar 21,2023
+# Start time: 13:57:39 on Mar 23,2023
 # vcom -work work AdderDemo.vho 
 
 # -- Loading package STANDARD
@@ -107,23 +107,21 @@ Reading pref.tcl
 # -- Loading package VITAL_Timing
 
 # -- Loading package VITAL_Primitives
-
 # -- Loading package cycloneive_atom_pack
-
 # -- Loading package cycloneive_components
 
-# -- Compiling entity Adder4
+# -- Compiling entity AddSub4
 
-# -- Compiling architecture structure of Adder4
+# -- Compiling architecture structure of AddSub4
 
-# End time: 09:01:14 on Mar 21,2023, Elapsed time: 0:00:00
+# End time: 13:57:39 on Mar 23,2023, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
 
-# Start time: 09:01:14 on Mar 21,2023
-# vcom -work work FullAdder.vhd.vwf.vht 
+# Start time: 13:57:39 on Mar 23,2023
+# vcom -work work Waveform5.vwf.vht 
 
 # -- Loading package STANDARD
 
@@ -131,17 +129,17 @@ Reading pref.tcl
 
 # -- Loading package std_logic_1164
 
-# -- Compiling entity Adder4_vhd_vec_tst
+# -- Compiling entity AddSub4_vhd_vec_tst
 
-# -- Compiling architecture Adder4_arch of Adder4_vhd_vec_tst
+# -- Compiling architecture AddSub4_arch of AddSub4_vhd_vec_tst
 
-# End time: 09:01:14 on Mar 21,2023, Elapsed time: 0:00:00
+# End time: 13:57:39 on Mar 23,2023, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
-# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Adder4_vhd_vec_tst 
-# Start time: 09:01:14 on Mar 21,2023
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.AddSub4_vhd_vec_tst 
+# Start time: 13:57:39 on Mar 23,2023
+# ** Note: (vsim-3812) Design is being optimized...
 
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
@@ -161,12 +159,12 @@ Reading pref.tcl
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.adder4_vhd_vec_tst(adder4_arch)#1
+# Loading work.addsub4_vhd_vec_tst(addsub4_arch)#1
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.adder4(structure)#1
+# Loading work.addsub4(structure)#1
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)#1
 # Loading cycloneive.cycloneive_io_ibuf(arch)#1
@@ -175,20 +173,20 @@ Reading pref.tcl
 
 # after#32
 
-# End time: 09:01:15 on Mar 21,2023, Elapsed time: 0:00:01
+# End time: 13:57:42 on Mar 23,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/FullAdder.vhd.vwf...
+Reading //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/Waveform5.vwf...
 
 Reading //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/AdderDemo.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/AdderDemo_20230321090116.sim.vwf
+Writing the resulting VWF to //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula03/Parte1/simulation/qsim/AdderDemo_20230323135742.sim.vwf
 
 Finished VCD to VWF conversion.
 
