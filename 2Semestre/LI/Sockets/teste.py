@@ -7,5 +7,7 @@ def main():
         b_data, addr = udp_s.recvfrom(4096) 
         udp_s.sendto(b_data.upper(), addr)
         udp_s.close()
+
+    
 main()
 

@@ -18,7 +18,10 @@ public class Ex01 {
         + bls.getNMecanografico() + ", Bolsa: " + bls.getMontanteBolsa() + ", Orientador: " +
         bls.getOrientador());
         System.out.println(bls);
-         }
+         
+    }
+
+        
 }
 
 
