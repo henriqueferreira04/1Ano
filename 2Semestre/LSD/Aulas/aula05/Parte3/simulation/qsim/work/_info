@@ -1,0 +1,130 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d//mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula05/Parte3/simulation/qsim
+T_opt
+!s110 1680612669
+VENWG]?De7d`=f4AkAEca:3
+Z2 04 18 11 work timern_vhd_vec_tst timern_arch 1
+=1-001c42fa1816-642c1d3d-1e6-68c
+Z3 !s124 OEM10U2 
+Z4 o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1680614151
+Vzc9]h7X^Zbhoc0bBc<8h32
+R2
+=1-001c42fa1816-642c2306-2e6-fa8
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+Etimern
+Z7 w1680614422
+Z8 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z9 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+Z10 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z11 DPx6 altera 11 dffeas_pack 0 22 TQ^5KMh2RTWZ2DMjzQ9nl1
+Z12 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z15 DPx6 altera 28 altera_primitives_components 0 22 PeP4hI9?O;BKk::[TF3o:2
+!i122 10
+Z16 d//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula05/Parte3/simulation/qsim
+Z17 8TimerN_Demo.vho
+Z18 FTimerN_Demo.vho
+l0
+L37 1
+VP`8;U:CX3>bd7Q62^hZSe3
+!s100 9h9>RO[;^mVEi`i<:z4L_3
+Z19 OL;C;2021.2;73
+32
+Z20 !s110 1680614424
+!i10b 1
+Z21 !s108 1680614424.000000
+Z22 !s90 -work|work|TimerN_Demo.vho|
+Z23 !s107 TimerN_Demo.vho|
+!i113 0
+Z24 o-work work
+Z25 tExplicit 1 CvgOpt 0
+Astructure
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+DEx4 work 6 timern 0 22 P`8;U:CX3>bd7Q62^hZSe3
+!i122 10
+l96
+L47 537
+Vm:3]Ze718H35BZNj^kFhd3
+!s100 f7VUh<`4_<z`RD8e=8cIW3
+R19
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R24
+R25
+Etimern_vhd_vec_tst
+Z26 w1680614420
+R13
+R14
+!i122 11
+R16
+Z27 8Waveform1.vwf.vht
+Z28 FWaveform1.vwf.vht
+l0
+L32 1
+VUEfneR=TC6:]_fdR9Y>B40
+!s100 Tzj4F=[OKR53c8dO3KAMA3
+R19
+32
+R20
+!i10b 1
+R21
+Z29 !s90 -work|work|Waveform1.vwf.vht|
+Z30 !s107 Waveform1.vwf.vht|
+!i113 0
+R24
+R25
+Atimern_arch
+R13
+R14
+Z31 DEx4 work 18 timern_vhd_vec_tst 0 22 UEfneR=TC6:]_fdR9Y>B40
+!i122 11
+l51
+Z32 L34 81
+Z33 V;YRfiegfhmZ3IRF^9L8U]1
+Z34 !s100 ?BC;U?MLf`_:dO1j@]NaL0
+R19
+32
+R20
+!i10b 1
+R21
+R29
+R30
+!i113 0
+R24
+R25

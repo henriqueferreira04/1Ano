@@ -1,0 +1,719 @@
+$comment
+	File created using the following command:
+		vcd file Counter_Demo.msim.vcd -direction
+$end
+$date
+	Mon Apr  3 21:23:19 2023
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2021.2
+$end
+$timescale
+	1ps
+$end
+
+$scope module counterloadupdown4_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " count [3] $end
+$var wire 1 # count [2] $end
+$var wire 1 $ count [1] $end
+$var wire 1 % count [0] $end
+$var wire 1 & dataIn [3] $end
+$var wire 1 ' dataIn [2] $end
+$var wire 1 ( dataIn [1] $end
+$var wire 1 ) dataIn [0] $end
+$var wire 1 * enable $end
+$var wire 1 + load $end
+$var wire 1 , reset $end
+$var wire 1 - upDown $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var wire 1 1 devoe $end
+$var wire 1 2 devclrn $end
+$var wire 1 3 devpor $end
+$var wire 1 4 ww_devoe $end
+$var wire 1 5 ww_devclrn $end
+$var wire 1 6 ww_devpor $end
+$var wire 1 7 ww_clk $end
+$var wire 1 8 ww_enable $end
+$var wire 1 9 ww_dataIn [3] $end
+$var wire 1 : ww_dataIn [2] $end
+$var wire 1 ; ww_dataIn [1] $end
+$var wire 1 < ww_dataIn [0] $end
+$var wire 1 = ww_load $end
+$var wire 1 > ww_upDown $end
+$var wire 1 ? ww_reset $end
+$var wire 1 @ ww_count [3] $end
+$var wire 1 A ww_count [2] $end
+$var wire 1 B ww_count [1] $end
+$var wire 1 C ww_count [0] $end
+$var wire 1 D \count[0]~output_o\ $end
+$var wire 1 E \count[1]~output_o\ $end
+$var wire 1 F \count[2]~output_o\ $end
+$var wire 1 G \count[3]~output_o\ $end
+$var wire 1 H \clk~input_o\ $end
+$var wire 1 I \enable~input_o\ $end
+$var wire 1 J \dataIn[0]~input_o\ $end
+$var wire 1 K \load~input_o\ $end
+$var wire 1 L \s_count~2_combout\ $end
+$var wire 1 M \reset~input_o\ $end
+$var wire 1 N \s_count~3_combout\ $end
+$var wire 1 O \dataIn[1]~input_o\ $end
+$var wire 1 P \upDown~input_o\ $end
+$var wire 1 Q \s_count~4_combout\ $end
+$var wire 1 R \s_count~5_combout\ $end
+$var wire 1 S \s_count~6_combout\ $end
+$var wire 1 T \Add0~0_combout\ $end
+$var wire 1 U \Add0~1_combout\ $end
+$var wire 1 V \Add0~2_combout\ $end
+$var wire 1 W \s_count[2]~8_cout\ $end
+$var wire 1 X \s_count[2]~10_cout\ $end
+$var wire 1 Y \s_count[2]~11_combout\ $end
+$var wire 1 Z \dataIn[2]~input_o\ $end
+$var wire 1 [ \s_count~13_combout\ $end
+$var wire 1 \ \s_count[2]~12\ $end
+$var wire 1 ] \s_count[3]~14_combout\ $end
+$var wire 1 ^ \dataIn[3]~input_o\ $end
+$var wire 1 _ s_count [3] $end
+$var wire 1 ` s_count [2] $end
+$var wire 1 a s_count [1] $end
+$var wire 1 b s_count [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0*
+0+
+0,
+0-
+0.
+1/
+x0
+11
+12
+13
+14
+15
+16
+07
+08
+0=
+0>
+0?
+0D
+0E
+0F
+0G
+0H
+0I
+1J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+1X
+0Y
+0Z
+0[
+0\
+0]
+1^
+1&
+0'
+0(
+1)
+19
+0:
+0;
+1<
+0_
+0`
+0a
+0b
+0"
+0#
+0$
+0%
+0@
+0A
+0B
+0C
+$end
+#20000
+1!
+17
+1H
+#40000
+0!
+07
+0H
+#60000
+1!
+1*
+17
+18
+1I
+1H
+1L
+1[
+1N
+#80000
+0!
+07
+0H
+#100000
+1!
+17
+1H
+1b
+0L
+1Q
+1U
+1S
+0N
+1D
+1C
+1%
+#120000
+0!
+07
+0H
+#140000
+1!
+17
+1H
+0b
+1a
+1T
+1L
+0U
+1N
+1E
+0D
+1B
+0C
+0%
+1$
+#160000
+0!
+07
+0H
+#180000
+1!
+1-
+17
+1>
+1P
+1H
+1b
+0Q
+1U
+1Y
+1]
+0X
+0S
+0L
+1Q
+1V
+1W
+1S
+0N
+0Y
+1\
+1D
+0]
+1C
+1%
+#200000
+0!
+1+
+07
+1=
+1K
+0H
+1L
+1R
+0S
+1N
+#220000
+1!
+17
+1H
+0a
+1_
+1]
+0Q
+0U
+1G
+0E
+1@
+0B
+0$
+1"
+#240000
+0!
+0-
+0*
+07
+0>
+08
+0I
+0P
+0H
+0T
+1U
+0V
+0W
+1Y
+0\
+0]
+0L
+0R
+0[
+1]
+1X
+0Y
+#260000
+1!
+17
+1H
+#280000
+0!
+1,
+07
+1?
+1M
+0H
+0N
+1[
+#300000
+1!
+17
+1H
+0b
+0_
+0]
+0U
+0G
+0D
+0@
+0C
+0%
+0"
+#320000
+0!
+07
+0H
+#330000
+0+
+0=
+0K
+#340000
+1!
+17
+1H
+#360000
+0!
+07
+0H
+#370000
+0,
+1*
+0?
+18
+1I
+0M
+1L
+1N
+#380000
+1!
+17
+1H
+1b
+0L
+1Q
+1U
+1S
+0N
+1D
+1C
+1%
+#400000
+0!
+07
+0H
+#420000
+1!
+1-
+17
+1>
+1P
+1H
+0b
+1a
+0Q
+1T
+0U
+1V
+1Y
+1]
+1W
+0S
+1L
+1U
+0V
+0W
+1N
+0X
+1E
+0D
+0Y
+1\
+1B
+0C
+0%
+1$
+0]
+#440000
+0!
+07
+0H
+#460000
+1!
+17
+1H
+1b
+0a
+0L
+0U
+1V
+1W
+1X
+0N
+0E
+1D
+1Y
+0\
+0X
+0B
+1C
+1%
+0$
+0Y
+1\
+1]
+0]
+#480000
+0!
+07
+0H
+#500000
+1!
+17
+1H
+0b
+1L
+1Q
+0V
+0W
+1S
+1N
+0D
+1X
+0C
+0%
+1Y
+0\
+1]
+#520000
+0!
+07
+0H
+#530000
+1,
+1?
+1M
+0N
+0S
+#540000
+1!
+17
+1H
+#550000
+0,
+0?
+0M
+1N
+1S
+#560000
+0!
+07
+0H
+#580000
+1!
+17
+1H
+1b
+1a
+1`
+1_
+0]
+0Y
+1\
+0L
+1U
+1V
+1W
+0X
+0N
+1]
+1G
+1F
+1E
+1D
+1Y
+1@
+1A
+1B
+1C
+1%
+1$
+1#
+1"
+#600000
+0!
+07
+0H
+#620000
+1!
+17
+1H
+0b
+1L
+0Q
+0V
+0W
+0S
+1N
+0D
+0C
+0%
+#640000
+0!
+1,
+1+
+07
+1?
+1=
+1K
+1M
+0H
+0N
+1R
+#660000
+1!
+17
+1H
+0a
+0`
+0_
+0]
+0Y
+1Q
+0U
+1X
+0G
+0F
+0E
+1Y
+0\
+0@
+0A
+0B
+0$
+0#
+0"
+1]
+#680000
+0!
+07
+0H
+#700000
+1!
+17
+1H
+#720000
+0!
+07
+0H
+#730000
+0,
+0+
+0?
+0=
+0K
+0M
+1N
+0R
+1S
+#740000
+1!
+17
+1H
+1b
+1a
+1`
+1_
+0]
+0Y
+1\
+0L
+1U
+1V
+1W
+0X
+0N
+1]
+1G
+1F
+1E
+1D
+1Y
+1@
+1A
+1B
+1C
+1%
+1$
+1#
+1"
+#760000
+0!
+07
+0H
+#780000
+1!
+0-
+17
+0>
+0P
+1H
+0b
+0Q
+0V
+0W
+0Y
+0]
+0S
+1L
+1Q
+0U
+1X
+1S
+1N
+0D
+1Y
+0\
+0C
+0%
+1]
+#800000
+0!
+07
+0H
+#820000
+1!
+17
+1H
+1b
+0L
+0Q
+1U
+0X
+0S
+0N
+1D
+0Y
+1\
+1C
+1%
+0]
+#840000
+0!
+07
+0H
+#860000
+1!
+17
+1H
+0b
+0a
+0`
+0_
+1]
+1Y
+0\
+0T
+1L
+0U
+1N
+1X
+0]
+0G
+0F
+0E
+0D
+0Y
+0@
+0A
+0B
+0C
+0%
+0$
+0#
+0"
+#880000
+0!
+0*
+07
+08
+0I
+0H
+0L
+0[
+0N
+#900000
+1!
+17
+1H
+#920000
+0!
+07
+0H
+#940000
+1!
+17
+1H
+#960000
+0!
+07
+0H
+#980000
+1!
+17
+1H
+#1000000

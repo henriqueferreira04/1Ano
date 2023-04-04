@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula04/Parte2/simulation/qsim
+T_opt
+!s110 1680551003
+Vf48Ol4dB]XdNW37m[<7:90
+04 21 14 work register8_vhd_vec_tst register8_arch 1
+=1-001c42fa1816-642b2c59-3d0-15b4
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Eregister8
+Z1 w1680550994
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 TQ^5KMh2RTWZ2DMjzQ9nl1
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 PeP4hI9?O;BKk::[TF3o:2
+!i122 0
+R0
+Z10 8Register_Demo.vho
+Z11 FRegister_Demo.vho
+l0
+L37 1
+V6AGVIVSlPkSJH3`ab?X152
+!s100 a1]mLzUHl<H]d6j<DlNo[1
+Z12 OL;C;2021.2;73
+32
+Z13 !s110 1680551000
+!i10b 1
+Z14 !s108 1680551000.000000
+Z15 !s90 -work|work|Register_Demo.vho|
+Z16 !s107 Register_Demo.vho|
+!i113 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 register8 0 22 6AGVIVSlPkSJH3`ab?X152
+!i122 0
+l87
+L46 367
+VRNlZEjI@ZWh;FQHfi_iOi1
+!s100 fe;A_3QnKlQF0PSJ74oeR2
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Eregister8_vhd_vec_tst
+Z19 w1680550992
+R7
+R8
+!i122 1
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+V<0FH[1`=PTlGok:DD5J_[0
+!s100 J69iBXek>Ja25:B71kB2f0
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 0
+R17
+R18
+Aregister8_arch
+R7
+R8
+DEx4 work 21 register8_vhd_vec_tst 0 22 <0FH[1`=PTlGok:DD5J_[0
+!i122 1
+l49
+L34 306
+VWAn6ddK0IDAUYlEhQ1_df0
+!s100 >N8NDi5DfMW8=l@@F`Ui>2
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 0
+R17
+R18

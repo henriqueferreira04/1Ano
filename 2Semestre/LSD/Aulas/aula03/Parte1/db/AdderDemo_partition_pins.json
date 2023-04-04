@@ -4,59 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LEDR[14]",
+					"name" : "LEDR[3]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[13]",
+					"name" : "LEDR[2]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[12]",
+					"name" : "LEDR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[11]",
+					"name" : "LEDR[0]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[10]",
+					"name" : "SW[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[13]",
+					"name" : "SW[6]",
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "SW[2]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[17]",
+					"name" : "SW[0]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[16]",
+					"name" : "SW[4]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[12]",
+					"name" : "SW[5]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[15]",
+					"name" : "SW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[11]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[14]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[10]",
+					"name" : "SW[7]",
 					"strict" : false
 				}
 			]

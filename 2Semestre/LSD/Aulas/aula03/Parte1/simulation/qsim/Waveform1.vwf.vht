@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/20/2023 12:06:22"
+-- Generated on "04/04/2023 15:50:06"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Adder4
 -- 
@@ -62,17 +62,13 @@ BEGIN
 t_prcs_a_3: PROCESS
 BEGIN
 	a(3) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	a(3) <= '1';
-	WAIT FOR 140000 ps;
+	WAIT FOR 170000 ps;
 	a(3) <= '0';
+	WAIT FOR 30000 ps;
+	a(3) <= '1';
 	WAIT FOR 50000 ps;
-	a(3) <= '1';
-	WAIT FOR 120000 ps;
-	a(3) <= '0';
-	WAIT FOR 40000 ps;
-	a(3) <= '1';
-	WAIT FOR 70000 ps;
 	a(3) <= '0';
 WAIT;
 END PROCESS t_prcs_a_3;
@@ -80,13 +76,9 @@ END PROCESS t_prcs_a_3;
 t_prcs_a_2: PROCESS
 BEGIN
 	a(2) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	a(2) <= '1';
-	WAIT FOR 140000 ps;
-	a(2) <= '0';
-	WAIT FOR 50000 ps;
-	a(2) <= '1';
-	WAIT FOR 120000 ps;
+	WAIT FOR 170000 ps;
 	a(2) <= '0';
 WAIT;
 END PROCESS t_prcs_a_2;
@@ -94,17 +86,13 @@ END PROCESS t_prcs_a_2;
 t_prcs_a_1: PROCESS
 BEGIN
 	a(1) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	a(1) <= '1';
-	WAIT FOR 140000 ps;
+	WAIT FOR 170000 ps;
 	a(1) <= '0';
+	WAIT FOR 30000 ps;
+	a(1) <= '1';
 	WAIT FOR 50000 ps;
-	a(1) <= '1';
-	WAIT FOR 120000 ps;
-	a(1) <= '0';
-	WAIT FOR 40000 ps;
-	a(1) <= '1';
-	WAIT FOR 70000 ps;
 	a(1) <= '0';
 WAIT;
 END PROCESS t_prcs_a_1;
@@ -112,13 +100,9 @@ END PROCESS t_prcs_a_1;
 t_prcs_a_0: PROCESS
 BEGIN
 	a(0) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	a(0) <= '1';
-	WAIT FOR 140000 ps;
-	a(0) <= '0';
-	WAIT FOR 50000 ps;
-	a(0) <= '1';
-	WAIT FOR 120000 ps;
+	WAIT FOR 170000 ps;
 	a(0) <= '0';
 WAIT;
 END PROCESS t_prcs_a_0;
@@ -126,13 +110,9 @@ END PROCESS t_prcs_a_0;
 t_prcs_b_3: PROCESS
 BEGIN
 	b(3) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	b(3) <= '1';
-	WAIT FOR 140000 ps;
-	b(3) <= '0';
-	WAIT FOR 220000 ps;
-	b(3) <= '1';
-	WAIT FOR 50000 ps;
+	WAIT FOR 70000 ps;
 	b(3) <= '0';
 WAIT;
 END PROCESS t_prcs_b_3;
@@ -140,13 +120,9 @@ END PROCESS t_prcs_b_3;
 t_prcs_b_2: PROCESS
 BEGIN
 	b(2) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	b(2) <= '1';
-	WAIT FOR 140000 ps;
-	b(2) <= '0';
-	WAIT FOR 220000 ps;
-	b(2) <= '1';
-	WAIT FOR 50000 ps;
+	WAIT FOR 70000 ps;
 	b(2) <= '0';
 WAIT;
 END PROCESS t_prcs_b_2;
@@ -154,9 +130,9 @@ END PROCESS t_prcs_b_2;
 t_prcs_b_1: PROCESS
 BEGIN
 	b(1) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	b(1) <= '1';
-	WAIT FOR 140000 ps;
+	WAIT FOR 70000 ps;
 	b(1) <= '0';
 WAIT;
 END PROCESS t_prcs_b_1;
@@ -164,9 +140,9 @@ END PROCESS t_prcs_b_1;
 t_prcs_b_0: PROCESS
 BEGIN
 	b(0) <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 20000 ps;
 	b(0) <= '1';
-	WAIT FOR 140000 ps;
+	WAIT FOR 70000 ps;
 	b(0) <= '0';
 WAIT;
 END PROCESS t_prcs_b_0;
@@ -175,13 +151,13 @@ END PROCESS t_prcs_b_0;
 t_prcs_cin: PROCESS
 BEGIN
 	cin <= '0';
+	WAIT FOR 100000 ps;
+	cin <= '1';
+	WAIT FOR 80000 ps;
+	cin <= '0';
 	WAIT FOR 40000 ps;
 	cin <= '1';
-	WAIT FOR 140000 ps;
-	cin <= '0';
 	WAIT FOR 50000 ps;
-	cin <= '1';
-	WAIT FOR 130000 ps;
 	cin <= '0';
 WAIT;
 END PROCESS t_prcs_cin;

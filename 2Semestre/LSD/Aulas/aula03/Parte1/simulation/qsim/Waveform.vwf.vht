@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/20/2023 11:56:20"
+-- Generated on "04/04/2023 15:08:48"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          FullAdder
 -- 
@@ -63,17 +63,13 @@ BEGIN
 t_prcs_a: PROCESS
 BEGIN
 	a <= '0';
-	WAIT FOR 240000 ps;
+	WAIT FOR 40000 ps;
 	a <= '1';
-	WAIT FOR 120000 ps;
+	WAIT FOR 110000 ps;
 	a <= '0';
 	WAIT FOR 120000 ps;
 	a <= '1';
-	WAIT FOR 60000 ps;
-	a <= '0';
-	WAIT FOR 120000 ps;
-	a <= '1';
-	WAIT FOR 240000 ps;
+	WAIT FOR 40000 ps;
 	a <= '0';
 WAIT;
 END PROCESS t_prcs_a;
@@ -81,23 +77,11 @@ END PROCESS t_prcs_a;
 -- b
 t_prcs_b: PROCESS
 BEGIN
-	b <= '1';
-	WAIT FOR 120000 ps;
 	b <= '0';
-	WAIT FOR 60000 ps;
+	WAIT FOR 130000 ps;
 	b <= '1';
-	WAIT FOR 180000 ps;
+	WAIT FOR 160000 ps;
 	b <= '0';
-	WAIT FOR 120000 ps;
-	b <= '1';
-	WAIT FOR 60000 ps;
-	b <= '0';
-	WAIT FOR 60000 ps;
-	b <= '1';
-	WAIT FOR 240000 ps;
-	b <= '0';
-	WAIT FOR 60000 ps;
-	b <= '1';
 WAIT;
 END PROCESS t_prcs_b;
 
@@ -105,33 +89,9 @@ END PROCESS t_prcs_b;
 t_prcs_cin: PROCESS
 BEGIN
 	cin <= '0';
-	WAIT FOR 60000 ps;
+	WAIT FOR 260000 ps;
 	cin <= '1';
-	WAIT FOR 60000 ps;
-	cin <= '0';
-	WAIT FOR 120000 ps;
-	cin <= '1';
-	WAIT FOR 60000 ps;
-	cin <= '0';
-	WAIT FOR 60000 ps;
-	cin <= '1';
-	WAIT FOR 60000 ps;
-	cin <= '0';
-	WAIT FOR 60000 ps;
-	cin <= '1';
-	WAIT FOR 60000 ps;
-	cin <= '0';
-	WAIT FOR 60000 ps;
-	cin <= '1';
-	WAIT FOR 60000 ps;
-	cin <= '0';
-	WAIT FOR 60000 ps;
-	cin <= '1';
-	WAIT FOR 120000 ps;
-	cin <= '0';
-	WAIT FOR 60000 ps;
-	cin <= '1';
-	WAIT FOR 60000 ps;
+	WAIT FOR 180000 ps;
 	cin <= '0';
 WAIT;
 END PROCESS t_prcs_cin;

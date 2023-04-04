@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition"
 
--- DATE "03/23/2023 13:57:37"
+-- DATE "04/04/2023 15:50:08"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -32,17 +32,17 @@ LIBRARY IEEE;
 USE CYCLONEIVE.CYCLONEIVE_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	AddSub4 IS
+ENTITY 	Adder4 IS
     PORT (
-	sub : IN std_logic;
 	a : IN std_logic_vector(3 DOWNTO 0);
 	b : IN std_logic_vector(3 DOWNTO 0);
+	cin : IN std_logic;
 	s : OUT std_logic_vector(3 DOWNTO 0);
 	cout : OUT std_logic
 	);
-END AddSub4;
+END Adder4;
 
-ARCHITECTURE structure OF AddSub4 IS
+ARCHITECTURE structure OF Adder4 IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -52,9 +52,9 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_sub : std_logic;
 SIGNAL ww_a : std_logic_vector(3 DOWNTO 0);
 SIGNAL ww_b : std_logic_vector(3 DOWNTO 0);
+SIGNAL ww_cin : std_logic;
 SIGNAL ww_s : std_logic_vector(3 DOWNTO 0);
 SIGNAL ww_cout : std_logic;
 SIGNAL \s[0]~output_o\ : std_logic;
@@ -64,24 +64,26 @@ SIGNAL \s[3]~output_o\ : std_logic;
 SIGNAL \cout~output_o\ : std_logic;
 SIGNAL \a[0]~input_o\ : std_logic;
 SIGNAL \b[0]~input_o\ : std_logic;
-SIGNAL \Adder|bit0|s~0_combout\ : std_logic;
-SIGNAL \a[1]~input_o\ : std_logic;
+SIGNAL \cin~input_o\ : std_logic;
+SIGNAL \bit0|s~0_combout\ : std_logic;
 SIGNAL \b[1]~input_o\ : std_logic;
-SIGNAL \Adder|bit1|s~0_combout\ : std_logic;
+SIGNAL \a[1]~input_o\ : std_logic;
+SIGNAL \bit0|cout~0_combout\ : std_logic;
+SIGNAL \bit1|s~combout\ : std_logic;
+SIGNAL \bit1|cout~0_combout\ : std_logic;
 SIGNAL \a[2]~input_o\ : std_logic;
 SIGNAL \b[2]~input_o\ : std_logic;
-SIGNAL \Adder|bit2|s~0_combout\ : std_logic;
+SIGNAL \bit2|s~combout\ : std_logic;
 SIGNAL \a[3]~input_o\ : std_logic;
 SIGNAL \b[3]~input_o\ : std_logic;
-SIGNAL \Adder|bit3|s~0_combout\ : std_logic;
-SIGNAL \sub~input_o\ : std_logic;
-SIGNAL \cout~0_combout\ : std_logic;
+SIGNAL \bit3|s~0_combout\ : std_logic;
+SIGNAL \bit3|s~combout\ : std_logic;
 
 BEGIN
 
-ww_sub <= sub;
 ww_a <= a;
 ww_b <= b;
+ww_cin <= cin;
 s <= ww_s;
 cout <= ww_cout;
 ww_devoe <= devoe;
@@ -95,7 +97,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Adder|bit0|s~0_combout\,
+	i => \bit0|s~0_combout\,
 	devoe => ww_devoe,
 	o => \s[0]~output_o\);
 
@@ -106,7 +108,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Adder|bit1|s~0_combout\,
+	i => \bit1|s~combout\,
 	devoe => ww_devoe,
 	o => \s[1]~output_o\);
 
@@ -117,7 +119,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Adder|bit2|s~0_combout\,
+	i => \bit2|s~combout\,
 	devoe => ww_devoe,
 	o => \s[2]~output_o\);
 
@@ -128,7 +130,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Adder|bit3|s~0_combout\,
+	i => \bit3|s~combout\,
 	devoe => ww_devoe,
 	o => \s[3]~output_o\);
 
@@ -139,7 +141,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \cout~0_combout\,
+	i => GND,
 	devoe => ww_devoe,
 	o => \cout~output_o\);
 
@@ -163,29 +165,30 @@ PORT MAP (
 	i => ww_b(0),
 	o => \b[0]~input_o\);
 
-\Adder|bit0|s~0\ : cycloneive_lcell_comb
--- Equation(s):
--- \Adder|bit0|s~0_combout\ = \a[0]~input_o\ $ (\b[0]~input_o\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000111111110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \a[0]~input_o\,
-	datad => \b[0]~input_o\,
-	combout => \Adder|bit0|s~0_combout\);
-
-\a[1]~input\ : cycloneive_io_ibuf
+\cin~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_a(1),
-	o => \a[1]~input_o\);
+	i => ww_cin,
+	o => \cin~input_o\);
+
+\bit0|s~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \bit0|s~0_combout\ = \a[0]~input_o\ $ (\b[0]~input_o\ $ (\cin~input_o\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1001011010010110",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \a[0]~input_o\,
+	datab => \b[0]~input_o\,
+	datac => \cin~input_o\,
+	combout => \bit0|s~0_combout\);
 
 \b[1]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
@@ -197,19 +200,60 @@ PORT MAP (
 	i => ww_b(1),
 	o => \b[1]~input_o\);
 
-\Adder|bit1|s~0\ : cycloneive_lcell_comb
+\a[1]~input\ : cycloneive_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_a(1),
+	o => \a[1]~input_o\);
+
+\bit0|cout~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \Adder|bit1|s~0_combout\ = \a[1]~input_o\ $ (\b[1]~input_o\)
+-- \bit0|cout~0_combout\ = (\a[0]~input_o\ & ((\b[0]~input_o\) # (\cin~input_o\))) # (!\a[0]~input_o\ & (\b[0]~input_o\ & \cin~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000111111110000",
+	lut_mask => "1110100011101000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \a[1]~input_o\,
-	datad => \b[1]~input_o\,
-	combout => \Adder|bit1|s~0_combout\);
+	dataa => \a[0]~input_o\,
+	datab => \b[0]~input_o\,
+	datac => \cin~input_o\,
+	combout => \bit0|cout~0_combout\);
+
+\bit1|s\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \bit1|s~combout\ = \b[1]~input_o\ $ (\a[1]~input_o\ $ (\bit0|cout~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1001011010010110",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \b[1]~input_o\,
+	datab => \a[1]~input_o\,
+	datac => \bit0|cout~0_combout\,
+	combout => \bit1|s~combout\);
+
+\bit1|cout~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \bit1|cout~0_combout\ = (\b[1]~input_o\ & ((\a[1]~input_o\) # (\bit0|cout~0_combout\))) # (!\b[1]~input_o\ & (\a[1]~input_o\ & \bit0|cout~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1110100011101000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \b[1]~input_o\,
+	datab => \a[1]~input_o\,
+	datac => \bit0|cout~0_combout\,
+	combout => \bit1|cout~0_combout\);
 
 \a[2]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
@@ -231,19 +275,20 @@ PORT MAP (
 	i => ww_b(2),
 	o => \b[2]~input_o\);
 
-\Adder|bit2|s~0\ : cycloneive_lcell_comb
+\bit2|s\ : cycloneive_lcell_comb
 -- Equation(s):
--- \Adder|bit2|s~0_combout\ = \a[2]~input_o\ $ (\b[2]~input_o\)
+-- \bit2|s~combout\ = \bit1|cout~0_combout\ $ (\a[2]~input_o\ $ (\b[2]~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000111111110000",
+	lut_mask => "1001011010010110",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \a[2]~input_o\,
-	datad => \b[2]~input_o\,
-	combout => \Adder|bit2|s~0_combout\);
+	dataa => \bit1|cout~0_combout\,
+	datab => \a[2]~input_o\,
+	datac => \b[2]~input_o\,
+	combout => \bit2|s~combout\);
 
 \a[3]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
@@ -265,9 +310,9 @@ PORT MAP (
 	i => ww_b(3),
 	o => \b[3]~input_o\);
 
-\Adder|bit3|s~0\ : cycloneive_lcell_comb
+\bit3|s~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \Adder|bit3|s~0_combout\ = \a[3]~input_o\ $ (\b[3]~input_o\)
+-- \bit3|s~0_combout\ = \a[3]~input_o\ $ (\b[3]~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -277,32 +322,23 @@ GENERIC MAP (
 PORT MAP (
 	datac => \a[3]~input_o\,
 	datad => \b[3]~input_o\,
-	combout => \Adder|bit3|s~0_combout\);
+	combout => \bit3|s~0_combout\);
 
-\sub~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_sub,
-	o => \sub~input_o\);
-
-\cout~0\ : cycloneive_lcell_comb
+\bit3|s\ : cycloneive_lcell_comb
 -- Equation(s):
--- \cout~0_combout\ = (\b[3]~input_o\ & (\a[3]~input_o\ $ (\sub~input_o\)))
+-- \bit3|s~combout\ = \bit3|s~0_combout\ $ (((\bit1|cout~0_combout\ & ((\a[2]~input_o\) # (\b[2]~input_o\))) # (!\bit1|cout~0_combout\ & (\a[2]~input_o\ & \b[2]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000101010100000",
+	lut_mask => "0001011111101000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \b[3]~input_o\,
-	datac => \a[3]~input_o\,
-	datad => \sub~input_o\,
-	combout => \cout~0_combout\);
+	dataa => \bit1|cout~0_combout\,
+	datab => \a[2]~input_o\,
+	datac => \b[2]~input_o\,
+	datad => \bit3|s~0_combout\,
+	combout => \bit3|s~combout\);
 
 ww_s(0) <= \s[0]~output_o\;
 

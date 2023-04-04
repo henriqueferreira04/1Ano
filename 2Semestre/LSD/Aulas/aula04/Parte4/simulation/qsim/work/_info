@@ -1,0 +1,129 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d//mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula04/Parte4/simulation/qsim
+T_opt
+!s110 1680555537
+VeeVmeYmP?bIfYRKU:@<FY2
+Z2 04 23 16 work freqdivider_vhd_vec_tst freqdivider_arch 1
+=1-001c42fa1816-642b3e10-2d9-106c
+Z3 !s124 OEM10U2 
+Z4 o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1680601550
+V[nNPcSKWO:aL9TDB^J_d=1
+R2
+=1-001c42fa1816-642bf1cd-133-133c
+R3
+R4
+R5
+n@_opt1
+R6
+Efreqdivider
+Z7 w1680601546
+Z8 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z9 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+Z10 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z11 DPx6 altera 11 dffeas_pack 0 22 TQ^5KMh2RTWZ2DMjzQ9nl1
+Z12 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z15 DPx6 altera 28 altera_primitives_components 0 22 PeP4hI9?O;BKk::[TF3o:2
+!i122 4
+Z16 d//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula04/Parte4/simulation/qsim
+Z17 8FreqDivider_Demo.vho
+Z18 FFreqDivider_Demo.vho
+l0
+L37 1
+VQd6GXE@?K_b1YLVh037`o3
+!s100 YVnW:T7YG;Xb?[O1@0;Mm1
+Z19 OL;C;2021.2;73
+32
+Z20 !s110 1680601548
+!i10b 1
+Z21 !s108 1680601548.000000
+Z22 !s90 -work|work|FreqDivider_Demo.vho|
+Z23 !s107 FreqDivider_Demo.vho|
+!i113 0
+Z24 o-work work
+Z25 tExplicit 1 CvgOpt 0
+Astructure
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+DEx4 work 11 freqdivider 0 22 Qd6GXE@?K_b1YLVh037`o3
+!i122 4
+l263
+L45 2762
+VI5>zZ_<bZhIdi^b:RC=>50
+!s100 1o^Pd?M=4cheod<o2gSd82
+R19
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R24
+R25
+Efreqdivider_vhd_vec_tst
+Z26 w1680601544
+R13
+R14
+!i122 5
+R16
+Z27 8Waveform1.vwf.vht
+Z28 FWaveform1.vwf.vht
+l0
+L32 1
+VO>2=ln7MJf6?4_=3<ISXm1
+!s100 XBKG:I6iRZXTXJ2dhVYH<3
+R19
+32
+R20
+!i10b 1
+R21
+Z29 !s90 -work|work|Waveform1.vwf.vht|
+Z30 !s107 Waveform1.vwf.vht|
+!i113 0
+R24
+R25
+Afreqdivider_arch
+R13
+R14
+DEx4 work 23 freqdivider_vhd_vec_tst 0 22 O>2=ln7MJf6?4_=3<ISXm1
+!i122 5
+l47
+L34 226
+V]?el[>mFRVU^U5D7LP;iH3
+!s100 jMHU7]J:HI2329<zn0F^@3
+R19
+32
+R20
+!i10b 1
+R21
+R29
+R30
+!i113 0
+R24
+R25
