@@ -3,7 +3,7 @@ $comment
 		vcd file AdderDemo.msim.vcd -direction
 $end
 $date
-	Tue Apr  4 15:50:10 2023
+	Wed Apr  5 11:12:35 2023
 $end
 $version
 	Questa Intel Starter FPGA Edition Version 2021.2
@@ -12,7 +12,7 @@ $timescale
 	1ps
 $end
 
-$scope module adder4_vhd_vec_tst $end
+$scope module addsub4_vhd_vec_tst $end
 $var wire 1 ! a [3] $end
 $var wire 1 " a [2] $end
 $var wire 1 # a [1] $end
@@ -21,12 +21,12 @@ $var wire 1 % b [3] $end
 $var wire 1 & b [2] $end
 $var wire 1 ' b [1] $end
 $var wire 1 ( b [0] $end
-$var wire 1 ) cin $end
-$var wire 1 * cout $end
-$var wire 1 + s [3] $end
-$var wire 1 , s [2] $end
-$var wire 1 - s [1] $end
-$var wire 1 . s [0] $end
+$var wire 1 ) cout $end
+$var wire 1 * s [3] $end
+$var wire 1 + s [2] $end
+$var wire 1 , s [1] $end
+$var wire 1 - s [0] $end
+$var wire 1 . sub $end
 
 $scope module i1 $end
 $var wire 1 / gnd $end
@@ -46,40 +46,41 @@ $var wire 1 < ww_b [3] $end
 $var wire 1 = ww_b [2] $end
 $var wire 1 > ww_b [1] $end
 $var wire 1 ? ww_b [0] $end
-$var wire 1 @ ww_cin $end
-$var wire 1 A ww_s [3] $end
-$var wire 1 B ww_s [2] $end
-$var wire 1 C ww_s [1] $end
-$var wire 1 D ww_s [0] $end
-$var wire 1 E ww_cout $end
-$var wire 1 F \s[0]~output_o\ $end
-$var wire 1 G \s[1]~output_o\ $end
-$var wire 1 H \s[2]~output_o\ $end
-$var wire 1 I \s[3]~output_o\ $end
-$var wire 1 J \cout~output_o\ $end
-$var wire 1 K \a[0]~input_o\ $end
-$var wire 1 L \b[0]~input_o\ $end
-$var wire 1 M \cin~input_o\ $end
-$var wire 1 N \bit0|s~0_combout\ $end
-$var wire 1 O \b[1]~input_o\ $end
-$var wire 1 P \a[1]~input_o\ $end
-$var wire 1 Q \bit0|cout~0_combout\ $end
-$var wire 1 R \bit1|s~combout\ $end
-$var wire 1 S \bit1|cout~0_combout\ $end
-$var wire 1 T \a[2]~input_o\ $end
-$var wire 1 U \b[2]~input_o\ $end
-$var wire 1 V \bit2|s~combout\ $end
-$var wire 1 W \a[3]~input_o\ $end
-$var wire 1 X \b[3]~input_o\ $end
-$var wire 1 Y \bit3|s~0_combout\ $end
-$var wire 1 Z \bit3|s~combout\ $end
+$var wire 1 @ ww_sub $end
+$var wire 1 A ww_cout $end
+$var wire 1 B ww_s [3] $end
+$var wire 1 C ww_s [2] $end
+$var wire 1 D ww_s [1] $end
+$var wire 1 E ww_s [0] $end
+$var wire 1 F \cout~output_o\ $end
+$var wire 1 G \s[0]~output_o\ $end
+$var wire 1 H \s[1]~output_o\ $end
+$var wire 1 I \s[2]~output_o\ $end
+$var wire 1 J \s[3]~output_o\ $end
+$var wire 1 K \sub~input_o\ $end
+$var wire 1 L \b[3]~input_o\ $end
+$var wire 1 M \a[3]~input_o\ $end
+$var wire 1 N \b[2]~input_o\ $end
+$var wire 1 O \a[2]~input_o\ $end
+$var wire 1 P \b[1]~input_o\ $end
+$var wire 1 Q \a[1]~input_o\ $end
+$var wire 1 R \a[0]~input_o\ $end
+$var wire 1 S \b[0]~input_o\ $end
+$var wire 1 T \adder|bit0|cout~0_combout\ $end
+$var wire 1 U \adder|bit1|cout~0_combout\ $end
+$var wire 1 V \adder|bit2|cout~0_combout\ $end
+$var wire 1 W \adder|bit3|cout~0_combout\ $end
+$var wire 1 X \adder|bit0|s~0_combout\ $end
+$var wire 1 Y \adder|bit1|s~combout\ $end
+$var wire 1 Z \adder|bit2|s~0_combout\ $end
+$var wire 1 [ \adder|bit3|s~0_combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
 0)
-0*
+0.
 0/
 10
 x1
@@ -90,254 +91,122 @@ x1
 16
 17
 0@
-0E
+0A
 0F
-0G
-0H
+1G
+1H
 0I
-0J
+1J
 0K
 0L
 0M
-0N
-0O
-0P
+1N
+1O
+1P
 0Q
-0R
+1R
 0S
 0T
 0U
-0V
+1V
 0W
-0X
-0Y
+1X
+1Y
 0Z
-0!
-0"
-0#
-0$
-0%
-0&
-0'
-0(
-0A
-0B
+1[
+1B
 0C
-0D
-08
-09
-0:
-0;
-0<
-0=
-0>
-0?
-0+
-0,
-0-
-0.
-$end
-#20000
-1!
+1D
+1E
+0!
 1"
-1#
+0#
 1$
-1%
+0%
 1&
 1'
-1(
-1;
-1:
-19
-18
-1?
-1>
-1=
-1<
-1X
-1U
-1O
-1L
-1W
-1T
-1P
-1K
-1Q
-1S
-1Z
-1V
-1R
-1I
-1A
-1G
-1H
-1+
-1C
-1B
-1-
-1,
-#90000
-0%
-0&
-0'
 0(
-0?
-0>
-0=
+1*
+0+
+1,
+1-
+08
+19
+0:
+1;
 0<
-0X
-0U
-0O
-0L
-1N
-0Q
-0R
-0V
-1Y
-0Z
-1R
-0S
-1V
-1Z
-0H
-0G
-1F
-0B
-0C
-1D
-1G
-0I
+1=
+1>
+0?
+$end
+#40000
 1.
-0-
-0,
-1C
-0A
-1I
-1H
-1-
-0+
-1A
-1B
-1,
-1+
-#100000
-1)
 1@
-1M
-0N
-1Q
-0R
-1S
+1K
+1T
 0V
-0Z
-0F
-0D
-0G
-0.
-0C
-0I
-0H
-0-
-0A
-0B
-0,
-0+
-#180000
-0)
-0@
-0M
-1N
-0Q
-1R
-0S
-1V
-1Z
-1F
-1D
-1G
-1.
-1C
-1I
-1H
-1-
-1A
-1B
-1,
-1+
-#190000
-0!
-0"
-0#
-0$
-0;
-0:
-09
-08
-0W
-0T
-0P
-0K
-0N
-0R
-0V
-0Y
-0Z
-0H
-0G
-0F
-0B
-0C
-0D
-0I
-0.
-0-
-0,
-0A
-0+
-#220000
-1!
-1#
-1)
-1:
-18
-1@
-1M
 1W
-1P
-1R
-1Y
-1N
+0Y
 1Z
+0[
+0W
+1[
+1Y
+0J
+1I
+0H
 1F
-1G
+0B
+1C
+0D
+1A
+1H
+1J
+0F
+0,
+1+
+0*
+1)
+1D
+1B
+0A
+1,
+1*
+0)
+#330000
+0.
+0@
+0K
+0T
+1U
+1V
+0Y
+0Z
+0[
+1[
+1Z
+0U
+1Y
+0Z
+0J
+0I
+0H
+0B
+0C
+0D
+1H
+1I
+1J
+0,
+0+
+0*
 1D
 1C
-1I
-1.
-1-
-1A
-1+
-#270000
-0!
-0#
-0)
-0:
-08
-0@
-0M
-0W
-0P
-0R
-0Y
-0N
-0Z
-0F
-0G
-0D
-0C
+1B
 0I
-0.
-0-
-0A
+1,
+1+
+1*
+0C
 0+
 #1000000

@@ -41,5 +41,7 @@ begin
                  b    => b(3),
                  cin  => carryOut(2),
                  s    => s(3),
-                 cout => carryOut(3));
+                 cout => cout);
+	
+	
 end Structural;
