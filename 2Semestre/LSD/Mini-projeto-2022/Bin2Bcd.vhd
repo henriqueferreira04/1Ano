@@ -11,9 +11,9 @@ ENTITY Bin2Bcd IS
 END Bin2Bcd;
 
 ARCHITECTURE Behavioral OF Bin2Bcd IS
-	SIGNAL rmSignal : unsigned(7 DOWNTO 0);
+	SIGNAL rmSignal : unsigned(3 DOWNTO 0);
 BEGIN
-	rmsignal <= unsigned(rInport);
+	rmsignal <= unsigned(Inport);
 	bInout2 <= STD_LOGIC_VECTOR(rmSignal/100)(3 DOWNTO 0);
 	bInout1 <= STD_LOGIC_VECTOR((rmSignal REM 100)/10)(3 DOWNTO 0);
 	bInout0 <= STD_LOGIC_VECTOR((rmSignal REM 100) REM 10)(3 DOWNTO 0);
