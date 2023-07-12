@@ -1,0 +1,50 @@
+# Reading pref.tcl
+# do projeto_Demo_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/david/Desktop/Projeto_5/AmbientSimulator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:21 on May 30,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/david/Desktop/Projeto_5/AmbientSimulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AmbientSimulator
+# -- Compiling architecture Behavioral of AmbientSimulator
+# End time: 16:38:22 on May 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work C:/Users/david/Desktop/Projeto_5/AmbientSimulator_Tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:35 on May 30,2023
+# vcom -reportprogress 300 -work work C:/Users/david/Desktop/Projeto_5/AmbientSimulator_Tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AmbientSimulator_Tb
+# -- Compiling architecture Stimulus of AmbientSimulator_Tb
+# -- Loading entity AmbientSimulator
+# End time: 16:38:36 on May 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.ambientsimulator_tb(stimulus)
+# vsim work.ambientsimulator_tb(stimulus) 
+# Start time: 16:38:46 on May 30,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ambientsimulator_tb(stimulus)
+# Loading work.ambientsimulator(behavioral)
+run
+# End time: 16:41:11 on May 30,2023, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 0

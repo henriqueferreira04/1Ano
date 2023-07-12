@@ -1,0 +1,52 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity PulseGeneratorN_Tb is
+end PulseGeneratorN_Tb;
+
+architecture Stimulus of PulseGeneratorN_Tb is
+    component PulseGeneratorN is
+        port (
+            clkIn : in std_logic;
+            modeOut1, modeOut2, modeOut3, modeOut4 : out std_logic
+        );
+    end component;
+
+    signal clk_tb : std_logic := '0';
+    signal modeOut1_tb, modeOut2_tb, modeOut3_tb, modeOut4_tb : std_logic;
+
+    constant clock_period : time := 10 ns;
+
+begin
+    DUT: PulseGeneratorN
+    port map (
+        clkIn    => clk_tb,
+        modeOut1 => modeOut1_tb,
+        modeOut2 => modeOut2_tb,
+        modeOut3 => modeOut3_tb,
+        modeOut4 => modeOut4_tb
+    );
+
+    clk_process: process
+    begin
+        while now < 5000 ns loop
+            clk_tb <= not clk_tb; -- Toggle the clock signal
+            wait for clock_period / 2;
+        end loop;
+        wait;
+    end process;
+
+    monitor_process: process
+    begin
+        wait for 100 ns; -- Wait for initial stabilization
+        while now < 5000 ns loop
+            report "modeOut1 = " & std_logic'image(modeOut1_tb);
+            report "modeOut2 = " & std_logic'image(modeOut2_tb);
+            report "modeOut3 = " & std_logic'image(modeOut3_tb);
+            report "modeOut4 = " & std_logic'image(modeOut4_tb);
+            wait for 100 ns;
+        end loop;
+        wait;
+    end process;
+
+end Stimulus;

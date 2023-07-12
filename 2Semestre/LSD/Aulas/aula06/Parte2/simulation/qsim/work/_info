@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula06/Parte2/simulation/qsim
+T_opt
+Z1 !s110 1683214702
+VZ@BF]U2_j=<cX5OX6K7^]1
+04 24 17 work seqshiftunit_vhd_vec_tst seqshiftunit_arch 1
+=1-001c42fa1816-6453d16e-191-eb8
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Eseqshiftunit
+Z2 w1683214701
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z4 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 TQ^5KMh2RTWZ2DMjzQ9nl1
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 PeP4hI9?O;BKk::[TF3o:2
+!i122 2
+R0
+Z11 8SeqShiftUnit_Demo.vho
+Z12 FSeqShiftUnit_Demo.vho
+l0
+L37 1
+V1E3VRO34fS>A:?_f2[5lB0
+!s100 =Hk;X1U=`o1R6?Cj0Ao6R3
+Z13 OL;C;2021.2;73
+32
+Z14 !s110 1683214701
+!i10b 1
+Z15 !s108 1683214701.000000
+Z16 !s90 -work|work|SeqShiftUnit_Demo.vho|
+Z17 !s107 SeqShiftUnit_Demo.vho|
+!i113 0
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 12 seqshiftunit 0 22 1E3VRO34fS>A:?_f2[5lB0
+!i122 2
+l110
+L51 669
+VahD`OZ8:7TYB>7P=B12Hd1
+!s100 GdXleO7z>VbgQ0leo5U2G1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Eseqshiftunit_vhd_vec_tst
+Z20 w1683214700
+R8
+R9
+!i122 3
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32 1
+VGTFXZO8A@^AoLe2Ygbn9:3
+!s100 nk5Z3X2Jd=klk;6l]C;lK1
+R13
+32
+R1
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 0
+R18
+R19
+Aseqshiftunit_arch
+R8
+R9
+DEx4 work 24 seqshiftunit_vhd_vec_tst 0 22 GTFXZO8A@^AoLe2Ygbn9:3
+!i122 3
+l59
+L34 190
+V7:FK<m^P<C96Xl;`h56j90
+!s100 DS1OjhePV5DeR6T;_@9IO3
+R13
+32
+R1
+!i10b 1
+R15
+R23
+R24
+!i113 0
+R18
+R19

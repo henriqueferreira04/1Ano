@@ -1,0 +1,102 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity Clock24h_Tb is
+end Clock24h_Tb;
+
+architecture Stimulus of Clock24h_Tb is
+
+    component Clock24h
+        port (
+            clk : in std_logic;
+            enable : in std_logic;
+            modeAcert : in std_logic_vector(1 downto 0);
+            increment, decrement : std_logic;
+            min : out std_logic_vector(5 downto 0);
+            hours : out std_logic_vector(5 downto 0)
+        );
+    end component;
+
+
+    signal clk : std_logic := '0';
+    signal enable : std_logic := '0';
+    signal modeAcert : std_logic_vector(1 downto 0) := "00";
+    signal increment, decrement : std_logic := '0';
+    signal min : std_logic_vector(5 downto 0);
+    signal hours : std_logic_vector(5 downto 0);
+
+
+    constant clk_period : time := 10 ns;
+    begin
+        clk_process: process
+        begin
+            while now <= 1000 ns loop
+                clk <= '0';
+                wait for clk_period / 2;
+                clk <= '1';
+                wait for clk_period / 2;
+            end loop;
+            wait;
+        end process;
+
+ 
+        uut: Clock24h
+        port map (
+            clk => clk,
+            enable => enable,
+            modeAcert => modeAcert,
+            increment => increment,
+            decrement => decrement,
+            min => min,
+            hours => hours
+        );
+
+
+        stimulus_process: process
+        begin
+
+            enable <= '1';
+
+ 
+            modeAcert <= "00";
+            wait for 100 ns;
+ 
+            wait for 60 * clk_period;
+ 
+            assert min = "000000" report "Mode '00' - Expected min = 0" severity note;
+            assert hours = "000001" report "Mode '00' - Expected hours = 1" severity note;
+
+ 
+            modeAcert <= "01";
+       
+            increment <= '1';
+            wait for clk_period;
+          
+            assert hours = "000010" report "Mode '01' - Expected hours = 2" severity note;
+     
+            decrement <= '1';
+            wait for clk_period;
+       
+            assert hours = "000001" report "Mode '01' - Expected hours = 1" severity note;
+
+          
+            modeAcert <= "10";
+
+            increment <= '1';
+            wait for clk_period;
+        
+            assert min = "000001" report "Mode '10' - Expected min = 1" severity note;
+       
+            decrement <= '1';
+            wait for clk_period;
+   
+            assert min = "111011" report "Mode '10' - Expected min = 59" severity note;
+
+
+            enable <= '0';
+
+            wait;
+        end process;
+
+end Stimulus;

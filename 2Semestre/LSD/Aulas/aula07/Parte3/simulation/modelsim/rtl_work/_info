@@ -1,0 +1,108 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/simulation/modelsim
+T_opt
+!s110 1683207489
+VYQfS0UcBARTc7I85c=O2Y2
+04 8 8 work alu16_tb stimulus 1
+=1-001c42fa1816-6453b541-ea-154c
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Ealu16
+Z1 w1683207040
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16.vhd
+Z6 F//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16.vhd
+l0
+L4 1
+VC;bJB>=93J?R4n?a?K8g40
+!s100 5Q>>C7jj>UGTk=NM1KzCV1
+Z7 OL;C;2021.2;73
+32
+Z8 !s110 1683207469
+!i10b 1
+Z9 !s108 1683207469.000000
+Z10 !s90 -reportprogress|300|-work|work|//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16.vhd|
+Z11 !s107 //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 5 alu16 0 22 C;bJB>=93J?R4n?a?K8g40
+!i122 1
+l13
+L11 30
+VSZWEjT2PgML7hI^OW7f3^1
+!s100 XEjdOGeXZB]n076NNQfi70
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ealu16_tb
+Z15 w1683206127
+R3
+R4
+!i122 2
+R0
+Z16 8//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16_Tb.vhd
+Z17 F//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16_Tb.vhd
+l0
+L3 1
+V4XS:60_1c?_EKR3;9FY1E2
+!s100 Eh?kM9jbZoUlT:C36>IbA2
+R7
+32
+Z18 !s110 1683207485
+!i10b 1
+Z19 !s108 1683207484.000000
+Z20 !s90 -reportprogress|300|-work|work|//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16_Tb.vhd|
+Z21 !s107 //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/ALU16_Tb.vhd|
+!i113 0
+R12
+R13
+Astimulus
+R2
+R14
+R3
+R4
+DEx4 work 8 alu16_tb 0 22 4XS:60_1c?_EKR3;9FY1E2
+!i122 2
+l13
+L5 44
+VAnBEbPTEYFU8Qm<6C6]On0
+!s100 c>TBX@S_mdfIRkn9N:zSi2
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R12
+R13

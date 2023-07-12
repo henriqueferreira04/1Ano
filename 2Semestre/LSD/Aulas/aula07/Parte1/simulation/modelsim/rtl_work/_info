@@ -1,0 +1,105 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/simulation/modelsim
+T_opt
+!s110 1681997962
+VbOhHA`4@Z3OO:<b84;N8e0
+04 11 8 work dec2_4en_tb stimulus 1
+=1-001c42fa1816-6441408a-19-1e54
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Edec2_4en
+Z1 w1681994853
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En.vhd
+Z5 F//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En.vhd
+l0
+L3 1
+V3Gga4je?:A1NHYY1aVjdG1
+!s100 F8Fll1KA3aObQ^4N?2af:1
+Z6 OL;C;2021.2;73
+31
+Z7 !s110 1681997921
+!i10b 1
+Z8 !s108 1681997921.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En.vhd|
+Z10 !s107 //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En.vhd|
+!i113 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+Z13 DEx4 work 8 dec2_4en 0 22 3Gga4je?:A1NHYY1aVjdG1
+!i122 0
+l11
+L9 21
+VmLb<SjZ`;0MGncKFLggWS0
+!s100 a1bk3d2BJEIzfI1cEO;C00
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Edec2_4en_tb
+Z14 w1681995652
+R2
+R3
+!i122 2
+R0
+Z15 8//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En_Tb.vhd
+Z16 F//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En_Tb.vhd
+l0
+L5 1
+Vbaj>fTU^XRNMXP;Ym[dL21
+!s100 IDN1]`AbW[i;O:zBiP>TD0
+R6
+32
+Z17 !s110 1681997956
+!i10b 1
+Z18 !s108 1681997956.000000
+Z19 !s90 -reportprogress|300|-work|work|//Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En_Tb.vhd|
+Z20 !s107 //Mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte1/Dec2_4En_Tb.vhd|
+!i113 0
+Z21 o-work work
+R12
+Astimulus
+R13
+R2
+R3
+DEx4 work 11 dec2_4en_tb 0 22 baj>fTU^XRNMXP;Ym[dL21
+!i122 2
+l15
+L8 31
+VDS7GMSRN]k@<9P?^F3:7@1
+!s100 HLQIXOWGb]LnbmjLl4XKC1
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R21
+R12

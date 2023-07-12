@@ -1,0 +1,13 @@
+
+State Machine - |projeto_Demo|AcertMode:tempMode|state
+Name state.Mode4 state.Mode3 state.Mode2 state.Mode1 
+state.Mode1 0 0 0 0 
+state.Mode2 0 0 1 1 
+state.Mode3 0 1 0 1 
+state.Mode4 1 0 0 1 
+
+State Machine - |projeto_Demo|AcertModeClk:modeClk|state
+Name state.Mode3 state.Mode2 state.Mode1 
+state.Mode1 0 0 0 
+state.Mode2 0 1 1 
+state.Mode3 1 0 1 

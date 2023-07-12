@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula10/Parte3/simulation/qsim
+T_opt
+!s110 1684777961
+VzU2bZYJhY@YZ=WHB9komL0
+04 23 16 work ram_2p_16_8_vhd_vec_tst ram_2p_16_8_arch 1
+=1-001c42fa1816-646babe8-22c-1430
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Eram_2p_16_8
+Z1 w1684777958
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 TQ^5KMh2RTWZ2DMjzQ9nl1
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 PeP4hI9?O;BKk::[TF3o:2
+!i122 0
+R0
+Z10 8RAM_2P_Demo.vho
+Z11 FRAM_2P_Demo.vho
+l0
+L37 1
+V2Agb=E^JdXFedfLK0YD7l3
+!s100 l^GBAfneoC5IWT3`7>ORO1
+Z12 OL;C;2021.2;73
+32
+!s110 1684777959
+!i10b 1
+Z13 !s108 1684777959.000000
+Z14 !s90 -work|work|RAM_2P_Demo.vho|
+Z15 !s107 RAM_2P_Demo.vho|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 11 ram_2p_16_8 0 22 2Agb=E^JdXFedfLK0YD7l3
+!i122 0
+l331
+L48 4131
+VHCc3<mfdQ:WD>eeKYPP9;1
+!s100 WeTJ5MeB6]2[RJeYj2SG90
+R12
+32
+Z18 !s110 1684777960
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Eram_2p_16_8_vhd_vec_tst
+Z19 w1684777957
+R7
+R8
+!i122 1
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+VWG?Rh[SI2ARoRChaS6Ck`0
+!s100 _3DF;7:E4]4Udg]102LMU0
+R12
+32
+R18
+!i10b 1
+Z22 !s108 1684777960.000000
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 0
+R16
+R17
+Aram_2p_16_8_arch
+R7
+R8
+DEx4 work 23 ram_2p_16_8_vhd_vec_tst 0 22 WG?Rh[SI2ARoRChaS6Ck`0
+!i122 1
+l53
+L34 490
+Ve5g[i>TT043AlngX_o_e22
+!s100 b]?@hQlXOSCe8W1B^NEUH2
+R12
+32
+R18
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R16
+R17

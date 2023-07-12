@@ -1,0 +1,76 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity AmbientSimulator_Tb is
+end AmbientSimulator_Tb;
+
+architecture Behavioral of AmbientSimulator_Tb is
+    component AmbientSimulator is
+        port (
+            enable  : in std_logic;
+            speed   : in std_logic;
+            clk     : in std_logic;
+            tempAmb : out std_logic_vector(8 downto 0)
+        );
+    end component;
+
+    signal enable_tb  : std_logic := '0';
+    signal speed_tb   : std_logic := '0';
+    signal clk_tb     : std_logic := '0';
+    signal tempAmb_tb : std_logic_vector(8 downto 0);
+
+    constant clock_period : time := 10 ns;  
+
+begin
+    DUT: AmbientSimulator
+    port map (
+        enable  => enable_tb,
+        speed   => speed_tb,
+        clk     => clk_tb,
+        tempAmb => tempAmb_tb
+    );
+
+
+    clk_process: process
+    begin
+        while now < 1000 ns loop 
+            clk_tb <= '0';
+            wait for clock_period / 2;
+            clk_tb <= '1';
+            wait for clock_period / 2;
+        end loop;
+        wait;
+    end process;
+
+ 
+    stimulus_process: process
+    begin
+        enable_tb <= '1';  
+
+ 
+        speed_tb <= '0';
+        wait for 100 ns;  
+        
+    
+        speed_tb <= '1';
+        wait for 100 ns; 
+
+        enable_tb <= '0';
+        wait for 100 ns;  
+        
+        
+        wait;
+    end process;
+
+    
+    monitor_process: process
+    begin
+    while now < 1000 ns loop  
+        report "tempAmb = " & integer'image(to_integer(unsigned(tempAmb_tb)));
+        wait for 10 ns; 
+    end loop;
+    wait;
+end process;
+
+end Behavioral;

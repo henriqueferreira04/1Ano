@@ -1,0 +1,98 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/david/Desktop/Projeto_5/simulation/modelsim
+Eambientsimulator
+Z1 w1685372655
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8C:/Users/david/Desktop/Projeto_5/AmbientSimulator.vhd
+Z6 FC:/Users/david/Desktop/Projeto_5/AmbientSimulator.vhd
+l0
+L5 1
+VK?zKBhKLK_AkCIn`iD6H>1
+!s100 6e?kK[dS9S1ZJ9ZAA:oSl2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1685461102
+!i10b 1
+Z9 !s108 1685461101.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/david/Desktop/Projeto_5/AmbientSimulator.vhd|
+Z11 !s107 C:/Users/david/Desktop/Projeto_5/AmbientSimulator.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 16 ambientsimulator 0 22 K?zKBhKLK_AkCIn`iD6H>1
+!i122 0
+l19
+L14 30
+VTI>=a:^=cAYaK>cFX<7aW1
+!s100 U`b6N`a<nZhS6P2g`jJmh1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eambientsimulator_tb
+Z15 w1685461058
+R2
+R3
+R4
+!i122 1
+R0
+Z16 8C:/Users/david/Desktop/Projeto_5/AmbientSimulator_Tb.vhd
+Z17 FC:/Users/david/Desktop/Projeto_5/AmbientSimulator_Tb.vhd
+l0
+L5 1
+V6F9inE8GYd:P;1_Gk9N<@2
+!s100 QLk0m>8[d??XUCzmNS=5K1
+R7
+32
+Z18 !s110 1685461116
+!i10b 1
+Z19 !s108 1685461115.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/david/Desktop/Projeto_5/AmbientSimulator_Tb.vhd|
+!s107 C:/Users/david/Desktop/Projeto_5/AmbientSimulator_Tb.vhd|
+!i113 1
+Z21 o-work work
+R13
+Astimulus
+R14
+R2
+R3
+R4
+DEx4 work 19 ambientsimulator_tb 0 22 6F9inE8GYd:P;1_Gk9N<@2
+!i122 1
+l17
+L8 51
+VfOIQbB;HSZ`RSO335BNGF2
+!s100 iW`;[=3`n70i;ARj8C>n=2
+R7
+32
+R18
+!i10b 1
+R19
+R20
+Z22 !s107 C:/Users/david/Desktop/Projeto_5/AmbientSimulator_Tb.vhd|
+!i113 1
+R21
+R13

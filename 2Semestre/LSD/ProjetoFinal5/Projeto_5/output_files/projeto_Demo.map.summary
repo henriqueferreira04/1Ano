@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 31 21:21:14 2023
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Revision Name : projeto_Demo
+Top-level Entity Name : projeto_Demo
+Family : Cyclone IV E
+Total logic elements : 1,179
+    Total combinational functions : 1,169
+    Dedicated logic registers : 309
+Total registers : 309
+Total pins : 64
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

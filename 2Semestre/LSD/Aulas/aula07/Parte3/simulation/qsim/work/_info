@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//mac/Home/Desktop/1Ano/2Semestre/LSD/Aulas/aula07/Parte3/simulation/qsim
+T_opt
+!s110 1681998822
+VR5JRd=zmaDWLDNDX<ISl71
+04 17 10 work alu16_vhd_vec_tst alu16_arch 1
+=1-001c42fa1816-644143e5-3a4-10f0
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R0
+Ealu16
+Z1 w1681998874
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+!i122 2
+R0
+Z8 8ALU16.vho
+Z9 FALU16.vho
+l0
+L35 1
+VUXi2]HOOJYg=[QcjNWcSg0
+!s100 Y2aZIzfU_Q5=OUI7^E;Rg2
+Z10 OL;C;2021.2;73
+32
+Z11 !s110 1681998874
+!i10b 1
+Z12 !s108 1681998874.000000
+Z13 !s90 -work|work|ALU16.vho|
+Z14 !s107 ALU16.vho|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 5 alu16 0 22 UXi2]HOOJYg=[QcjNWcSg0
+!i122 2
+l1139
+L45 14280
+VojzDYa1]kBDnM3W7f88^H0
+!s100 hZ7ik`NR[GPCzoFk:4zoD2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Ealu16_vhd_vec_tst
+Z17 w1681998872
+R5
+R6
+!i122 3
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L32 1
+V7TYPZ5TZR]Km=mbLoR<N?0
+!s100 1^[lo<F9YzgoGYYl<mndn1
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform.vwf.vht|
+Z21 !s107 Waveform.vwf.vht|
+!i113 0
+R15
+R16
+Aalu16_arch
+R5
+R6
+Z22 DEx4 work 17 alu16_vhd_vec_tst 0 22 7TYPZ5TZR]Km=mbLoR<N?0
+!i122 3
+l51
+Z23 L34 1096
+Z24 VMVVo:Bhn5UXcCd0<@:?T<0
+Z25 !s100 eLlBWXGmNjMT3OY9YFU`z0
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 0
+R15
+R16
